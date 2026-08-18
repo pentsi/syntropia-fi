@@ -1,0 +1,167 @@
+/* Syntropia — värit ja muotokieli poimittu suoraan logosta:
+   tausta #fbfbfb, pääpuna #e02838, syvä #e42433, teksti lähes musta.
+   Motiivi: nouseva kaari ja siihen suppenevat säteet. */
+
+:root{
+  --bg:#fbfbfb;
+  --ink:#0d0d0f;
+  --muted:#5f6065;
+  --line:#e6e4e2;
+  --red:#e02838;
+  --red-deep:#b8121f;
+  --red-soft:#f6d8db;
+  --max:64rem;
+  --pad:clamp(1.25rem, 4vw, 2.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+html{-webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  /* lyhyt sivu ei saa jättää footeria kellumaan keskelle korkeaa näyttöä */
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  background:var(--bg);
+  color:var(--ink);
+  font:400 clamp(1rem,0.97rem + 0.2vw,1.075rem)/1.65 ui-sans-serif,system-ui,-apple-system,
+       "Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%;height:auto;display:block}
+
+a{color:inherit}
+
+.skip{
+  position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;
+  padding:.6rem 1rem;border-radius:0 0 .4rem 0;z-index:10;
+}
+.skip:focus{left:0}
+
+:where(a,button):focus-visible{
+  outline:2px solid var(--red);
+  outline-offset:3px;
+  border-radius:.25rem;
+}
+
+/* ── header / footer ─────────────────────────────────────────── */
+header.site,footer.site{
+  max-width:var(--max);margin-inline:auto;padding:1.15rem var(--pad);
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+header.site{border-bottom:1px solid var(--line)}
+
+.brand{
+  display:inline-flex;align-items:center;gap:.55rem;
+  text-decoration:none;
+}
+.brand-mark{width:34px;height:34px;border-radius:50%}
+/* wordmark leikattu suoraan logosta -> identtinen kirjaintyyppi, ei fonttilatausta */
+.brand-word{
+  width:auto;height:1.05rem;
+  mix-blend-mode:multiply;   /* logon valkoinen tausta sulautuu palkkiin */
+}
+
+header nav{display:flex;gap:1.4rem;font-size:.94rem}
+header nav a{color:var(--muted);text-decoration:none;padding-block:.2rem}
+header nav a:hover{color:var(--ink)}
+
+main{flex:1}
+
+footer.site{
+  border-top:1px solid var(--line);margin-top:4rem;
+  color:var(--muted);font-size:.9rem;
+}
+footer.site p{margin:0}
+.muted{color:var(--muted)}
+
+/* ── hero ────────────────────────────────────────────────────── */
+.hero{
+  position:relative;isolation:isolate;overflow:hidden;
+  max-width:var(--max);margin-inline:auto;
+  padding:clamp(3rem,9vw,6rem) var(--pad) clamp(2.5rem,7vw,4.5rem);
+  text-align:center;
+}
+
+/* logon motiivi: pehmeä säteily ylhäältä + suppeneva viivasto */
+.rays{
+  position:absolute;inset:-20% -10% auto;height:120%;z-index:-1;
+  background:
+    radial-gradient(58% 42% at 50% 6%, rgba(224,40,56,.16), transparent 68%),
+    radial-gradient(28% 20% at 50% 4%, rgba(224,40,56,.22), transparent 70%);
+  -webkit-mask-image:linear-gradient(#000 55%,transparent);
+          mask-image:linear-gradient(#000 55%,transparent);
+}
+
+.hero .logo{
+  width:min(26rem,82%);margin:0 auto clamp(1.5rem,4vw,2.25rem);
+  mix-blend-mode:multiply;   /* logon valkoinen tausta sulautuu sivun taustaan */
+}
+
+h1{
+  margin:0 0 .9rem;
+  font-size:clamp(2rem,1.35rem + 2.6vw,3.15rem);
+  line-height:1.1;letter-spacing:-.02em;font-weight:650;
+  text-wrap:balance;
+}
+
+.lede{
+  margin:0 auto;max-width:44ch;color:var(--muted);
+  font-size:clamp(1.02rem,0.99rem + 0.25vw,1.16rem);
+  text-wrap:pretty;
+}
+
+.cta{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin:2rem 0 0}
+
+.btn{
+  display:inline-block;text-decoration:none;font-weight:550;font-size:.97rem;
+  padding:.72rem 1.35rem;border-radius:999px;
+  background:var(--red);color:#fff;border:1px solid var(--red);
+  transition:background .15s ease,border-color .15s ease,color .15s ease;
+}
+.btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--red);color:var(--red-deep)}
+
+/* ── sisältölohkot ───────────────────────────────────────────── */
+.band{max-width:var(--max);margin-inline:auto;padding:clamp(2.5rem,6vw,4rem) var(--pad)}
+
+h2{
+  margin:0 0 1.75rem;font-size:.82rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  display:flex;align-items:center;gap:.9rem;
+}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+
+.grid{
+  display:grid;gap:clamp(1.5rem,3.5vw,2.5rem);
+  grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+}
+.grid article{position:relative;padding-top:1.1rem}
+.grid article::before{
+  content:"";position:absolute;top:0;left:0;width:2.25rem;height:2px;
+  background:linear-gradient(90deg,var(--red),var(--red-soft));
+}
+h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
+.grid p{margin:0;color:var(--muted)}
+
+.contact{text-align:center;padding-bottom:clamp(3rem,7vw,5rem)}
+.contact h2{justify-content:center}
+.contact h2::after{display:none}
+.contact .lede{margin-bottom:1.4rem}
+
+.mail{margin:0;font-size:clamp(1.15rem,1rem + 0.9vw,1.6rem);font-weight:600;letter-spacing:-.01em}
+.mail a{
+  text-decoration:none;color:var(--ink);
+  background-image:linear-gradient(var(--red),var(--red));
+  background-size:100% 2px;background-repeat:no-repeat;background-position:0 100%;
+  padding-bottom:.15rem;transition:color .15s ease;
+}
+.mail a:hover{color:var(--red-deep)}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important}
+}
