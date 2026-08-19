@@ -148,6 +148,46 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .grid p{margin:0;color:var(--muted)}
 
+/* ── sovellukset ─────────────────────────────────────────────── */
+.app{display:grid;gap:clamp(1.5rem,4vw,2.75rem);align-items:center}
+@media (min-width:52rem){.app{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+
+/* Kuvapaikka varaa tilansa myös tyhjänä (aspect-ratio), jotta sivu ei hyppää
+   kun oikea kuvakaappaus lisätään. Jos kuvaa ei ole, img poistaa itsensä ja
+   jäljelle jää katkoviivainen paikka - ei rikkinäisen kuvan ikonia. */
+.app-shot{
+  display:block;aspect-ratio:16/10;overflow:hidden;background:#fff;
+  border:1px solid var(--line);border-radius:.7rem;text-decoration:none;
+  transition:border-color .15s ease;
+}
+.app-shot:hover{border-color:var(--red)}
+.app-shot img{width:100%;height:100%;object-fit:cover;object-position:top left}
+.app-shot.is-empty{
+  border-style:dashed;display:grid;place-items:center;
+  background:linear-gradient(160deg,#fff,var(--red-soft));
+}
+.app-shot.is-empty::after{content:attr(data-empty);color:var(--muted);font-size:.85rem}
+
+.app-status{
+  display:inline-block;margin:0 0 .75rem;padding:.24rem .62rem;border-radius:999px;
+  font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--red-deep);background:var(--red-soft);
+}
+
+.app-body h3{font-size:clamp(1.25rem,1.1rem + 0.7vw,1.6rem);margin-bottom:.6rem}
+.app-lead{margin:0 0 1.1rem;color:var(--muted)}
+
+.app-points{margin:0 0 1.3rem;padding:0;list-style:none;display:grid;gap:.45rem}
+.app-points li{position:relative;padding-left:1.15rem;color:var(--muted);font-size:.97rem}
+.app-points li::before{
+  content:"";position:absolute;left:0;top:.62em;width:.42rem;height:.42rem;
+  border-radius:50%;background:var(--red);
+}
+
+.app-meta{margin:0 0 1.4rem}
+.app-meta strong{font-size:1.22rem;letter-spacing:-.01em}
+.app-cta{margin:0}
+
 .contact{text-align:center;padding-bottom:clamp(3rem,7vw,5rem)}
 .contact h2{justify-content:center}
 .contact h2::after{display:none}
