@@ -202,6 +202,14 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 }
 .mail a:hover{color:var(--red-deep)}
 
+.mail-secondary{margin:.6rem 0 0;font-size:1rem;color:var(--muted)}
+.mail-secondary a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line)}
+.mail-secondary a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
+
+.app-contact{margin:.9rem 0 0;font-size:.92rem;color:var(--muted)}
+.app-contact a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line)}
+.app-contact a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
+
 @media (prefers-reduced-motion:reduce){
   *{transition:none !important;animation:none !important}
 }
