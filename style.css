@@ -154,8 +154,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
   font-size:clamp(1.02rem,.98rem + .25vw,1.14rem);text-wrap:pretty;
 }
 
-.app{display:grid;gap:clamp(1.5rem,4vw,2.75rem);align-items:center}
-@media (min-width:52rem){.app{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+.app{display:grid;gap:clamp(1.75rem,4vw,2.75rem)}
 
 /* Kuvapaikka varaa tilansa myös tyhjänä (aspect-ratio), jotta sivu ei hyppää
    kun oikea kuvakaappaus lisätään. Jos kuvaa ei ole, img poistaa itsensä ja
@@ -179,6 +178,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
   color:var(--red-deep);background:var(--red-soft);
 }
 
+.app-body{max-width:54rem}
 .app-body h3{font-size:clamp(1.25rem,1.1rem + 0.7vw,1.6rem);margin-bottom:.6rem}
 .app-lead{margin:0 0 1.1rem;color:var(--muted)}
 
@@ -187,6 +187,9 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .app-points li::before{
   content:"";position:absolute;left:0;top:.62em;width:.42rem;height:.42rem;
   border-radius:50%;background:var(--red);
+}
+@media (min-width:44rem){
+  .app-points{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2rem}
 }
 
 .app-meta{margin:0 0 1.4rem}
