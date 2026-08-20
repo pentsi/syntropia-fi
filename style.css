@@ -244,7 +244,8 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
   animation:singularity-rainbow 4s linear infinite;
 }
 @keyframes singularity-rainbow{from{background-position:0% 50%}to{background-position:200% 50%}}
-.shop-card .product-lead strong{color:#e63946}
+.shop-card .product-lead > strong{color:var(--ink)}
+.shop-card .product-lead .shop-penny{color:#e63946}
 .product-lead{margin:0 0 1.1rem;color:var(--muted);text-wrap:pretty}
 .product-points{margin:0 0 1.5rem;padding:0;list-style:none;display:grid;gap:.55rem}
 .product-points li{position:relative;padding-left:1.1rem;color:var(--muted);font-size:.95rem}
