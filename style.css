@@ -148,6 +148,27 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .grid p{margin:0;color:var(--muted)}
 
+/* ── tekoälyapu ─────────────────────────────────────────────── */
+.consultation{
+  margin-top:clamp(1rem,3vw,2rem);padding-block:clamp(2.25rem,5vw,3.5rem);
+  border-block:1px solid var(--line);background:linear-gradient(120deg,#fff,var(--red-soft));
+}
+.consultation-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(1.75rem,5vw,4rem);align-items:start;
+}
+.consultation h3{font-size:clamp(1.55rem,1.3rem + 1vw,2.2rem);line-height:1.14;letter-spacing:-.025em}
+.consultation p{margin:0;color:var(--muted);text-wrap:pretty}
+.consultation-points{margin:0;padding:0;list-style:none;display:grid;gap:.7rem}
+.consultation-points li{position:relative;padding-left:1.15rem;color:var(--muted)}
+.consultation-points li::before{
+  content:"";position:absolute;left:0;top:.68em;width:.42rem;height:.42rem;
+  border-radius:50%;background:var(--red);
+}
+.consultation-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem!important}
+.text-action{color:var(--ink);font-weight:600;text-underline-offset:.2em}
+.text-action:hover{color:var(--red-deep)}
+
 /* ── sovellukset ─────────────────────────────────────────────── */
 .section-intro{
   max-width:46rem;margin:-.65rem 0 clamp(2rem,5vw,3.25rem);color:var(--muted);
@@ -256,7 +277,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .product-note{margin:1.5rem 0 0;color:var(--muted);font-size:.92rem;font-weight:550}
 
 @media (max-width:44rem){
-  .product-grid{grid-template-columns:1fr}
+  .product-grid,.consultation-grid{grid-template-columns:1fr}
 }
 
 @media (prefers-reduced-motion:reduce){
