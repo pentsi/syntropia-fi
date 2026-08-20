@@ -7,9 +7,9 @@
   --ink:#0d0d0f;
   --muted:#5f6065;
   --line:#e6e4e2;
-  --red:#c9525c;
-  --red-deep:#a83d46;
-  --red-soft:#f7e2e4;
+  --red:#e02838;
+  --red-deep:#b8121f;
+  --red-soft:#f6d8db;
   --max:64rem;
   --pad:clamp(1.25rem, 4vw, 2.5rem);
 }
