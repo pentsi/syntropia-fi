@@ -149,6 +149,11 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .grid p{margin:0;color:var(--muted)}
 
 /* ── sovellukset ─────────────────────────────────────────────── */
+.section-intro{
+  max-width:46rem;margin:-.65rem 0 clamp(2rem,5vw,3.25rem);color:var(--muted);
+  font-size:clamp(1.02rem,.98rem + .25vw,1.14rem);text-wrap:pretty;
+}
+
 .app{display:grid;gap:clamp(1.5rem,4vw,2.75rem);align-items:center}
 @media (min-width:52rem){.app{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
 
@@ -209,6 +214,38 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .app-contact{margin:.9rem 0 0;font-size:.92rem;color:var(--muted)}
 .app-contact a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line)}
 .app-contact a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
+
+.product-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(1rem,3vw,1.5rem);margin-top:clamp(2.5rem,7vw,4.5rem);
+}
+.product-card{
+  position:relative;overflow:hidden;min-height:100%;padding:clamp(1.35rem,3.5vw,2rem);
+  border:1px solid var(--line);border-radius:.85rem;background:#fff;
+}
+.product-card::after{
+  content:"";position:absolute;right:-4rem;top:-4rem;width:10rem;height:10rem;
+  border-radius:50%;background:var(--red-soft);opacity:.55;pointer-events:none;
+}
+.product-symbol{
+  display:grid;place-items:center;width:2.75rem;height:2.75rem;margin:0 0 1.4rem;
+  border-radius:.65rem;background:var(--ink);color:#fff;font-weight:750;
+  font-size:1.2rem;position:relative;z-index:1;
+}
+.shop-card .product-symbol{background:var(--red)}
+.product-card h3{font-size:clamp(1.2rem,1.05rem + .65vw,1.55rem);margin-bottom:.65rem}
+.product-lead{margin:0 0 1.1rem;color:var(--muted);text-wrap:pretty}
+.product-points{margin:0 0 1.5rem;padding:0;list-style:none;display:grid;gap:.55rem}
+.product-points li{position:relative;padding-left:1.1rem;color:var(--muted);font-size:.95rem}
+.product-points li::before{
+  content:"";position:absolute;left:0;top:.66em;width:.38rem;height:.38rem;
+  border-radius:50%;background:var(--red);
+}
+.product-note{margin:1.5rem 0 0;color:var(--muted);font-size:.92rem;font-weight:550}
+
+@media (max-width:44rem){
+  .product-grid{grid-template-columns:1fr}
+}
 
 @media (prefers-reduced-motion:reduce){
   *{transition:none !important;animation:none !important}
