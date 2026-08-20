@@ -161,7 +161,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
    kun oikea kuvakaappaus lisätään. Jos kuvaa ei ole, img poistaa itsensä ja
    jäljelle jää katkoviivainen paikka - ei rikkinäisen kuvan ikonia. */
 .app-shot{
-  display:block;aspect-ratio:16/10;overflow:hidden;background:#fff;
+  display:block;aspect-ratio:16/9;overflow:hidden;background:#fff;
   border:1px solid var(--line);border-radius:.7rem;text-decoration:none;
   transition:border-color .15s ease;
 }
