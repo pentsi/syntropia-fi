@@ -277,6 +277,9 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .product-note{margin:1.5rem 0 0;color:var(--muted);font-size:.92rem;font-weight:550}
 
 @media (max-width:44rem){
+  header.site{flex-wrap:wrap;align-items:center;gap:.65rem}
+  header.site nav{flex:1 0 100%;justify-content:space-between;gap:.5rem;font-size:.88rem}
+  header.site nav a{padding-block:.35rem}
   .product-grid,.consultation-grid{grid-template-columns:1fr}
 }
 
