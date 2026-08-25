@@ -148,26 +148,41 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .grid p{margin:0;color:var(--muted)}
 
-/* ── tekoälyapu ─────────────────────────────────────────────── */
-.consultation{
-  margin-top:clamp(1rem,3vw,2rem);padding-block:clamp(2.25rem,5vw,3.5rem);
-  border-block:1px solid var(--line);background:linear-gradient(120deg,#fff,var(--red-soft));
+/* ── palvelut ───────────────────────────────────────────────── */
+.services{
+  max-width:82rem;margin-top:clamp(1rem,3vw,2rem);
+  border-block:1px solid var(--line);
+  background:linear-gradient(145deg,#fff 0%,#fff 65%,var(--red-soft) 145%);
 }
-.consultation-grid{
-  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:clamp(1.75rem,5vw,4rem);align-items:start;
+.service-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;
 }
-.consultation h3{font-size:clamp(1.55rem,1.3rem + 1vw,2.2rem);line-height:1.14;letter-spacing:-.025em}
-.consultation p{margin:0;color:var(--muted);text-wrap:pretty}
-.consultation-points{margin:0;padding:0;list-style:none;display:grid;gap:.7rem}
-.consultation-points li{position:relative;padding-left:1.15rem;color:var(--muted)}
-.consultation-points li::before{
-  content:"";position:absolute;left:0;top:.68em;width:.42rem;height:.42rem;
+.service-card{
+  display:flex;flex-direction:column;min-height:100%;padding:clamp(1.35rem,3vw,1.9rem);
+  border:1px solid var(--line);border-radius:.9rem;background:rgba(255,255,255,.92);
+}
+.service-card.featured{border-color:rgba(224,40,56,.45);box-shadow:0 1rem 2.4rem rgba(184,18,31,.08)}
+.service-kicker{
+  margin:0 0 .7rem;color:var(--red-deep);font-size:.72rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+}
+.service-card h3{font-size:clamp(1.2rem,1.08rem + .5vw,1.5rem)}
+.service-price{
+  margin:.7rem 0 1rem;color:var(--ink);font-size:clamp(1.55rem,1.3rem + 1vw,2.15rem);
+  line-height:1.05;font-weight:700;letter-spacing:-.025em;
+}
+.service-price small{font-size:.8rem;font-weight:550;color:var(--muted);letter-spacing:0}
+.service-price-text{font-size:1.2rem;line-height:1.25;letter-spacing:-.01em}
+.service-lead{margin:0 0 1.1rem;color:var(--muted);text-wrap:pretty}
+.service-points{margin:0 0 1.5rem;padding:0;list-style:none;display:grid;gap:.55rem}
+.service-points li{position:relative;padding-left:1.15rem;color:var(--muted);font-size:.95rem}
+.service-points li::before{
+  content:"";position:absolute;left:0;top:.64em;width:.4rem;height:.4rem;
   border-radius:50%;background:var(--red);
 }
-.consultation-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem!important}
-.text-action{color:var(--ink);font-weight:600;text-underline-offset:.2em}
-.text-action:hover{color:var(--red-deep)}
+.service-action{margin:auto 0 0;padding-top:.25rem}
+.service-footnote{margin:.8rem 0 0;color:var(--muted);font-size:.8rem}
+.accounting-service{background:linear-gradient(155deg,#fff,#f4faf6)}
 
 /* ── sovellukset ─────────────────────────────────────────────── */
 .section-intro{
@@ -280,7 +295,12 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
   header.site{flex-wrap:wrap;align-items:center;gap:.65rem}
   header.site nav{flex:1 0 100%;justify-content:space-between;gap:.5rem;font-size:.88rem}
   header.site nav a{padding-block:.35rem}
-  .product-grid,.consultation-grid{grid-template-columns:1fr}
+  .product-grid,.service-grid{grid-template-columns:1fr}
+}
+
+@media (min-width:44.01rem) and (max-width:68rem){
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .accounting-service{grid-column:1/-1}
 }
 
 @media (prefers-reduced-motion:reduce){
