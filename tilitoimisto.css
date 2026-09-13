@@ -65,6 +65,24 @@ body.tilitoimisto .hero-kicker{
   margin:0 0 1rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--blue-soft);
 }
+.kicker-wind{display:inline-block;width:1.05rem;height:1.05rem;margin-right:.5rem;vertical-align:-.18em}
+
+/* tuulimotiivi */
+.hero-wind{
+  position:absolute;top:50%;right:clamp(1rem,5vw,5rem);transform:translateY(-50%);
+  width:clamp(12rem,24vw,20rem);color:rgba(255,255,255,.13);pointer-events:none;
+}
+.hero-wind svg{display:block;width:100%;height:auto}
+@media (prefers-reduced-motion:no-preference){
+  .hero-wind{animation:wind-drift 10s ease-in-out infinite alternate}
+}
+@keyframes wind-drift{
+  from{transform:translate3d(-1rem,-50%,0)}
+  to{transform:translate3d(1.6rem,-50%,0)}
+}
+@media (max-width:56rem){
+  .hero-wind{display:none}
+}
 body.tilitoimisto .hero .lede{color:rgba(255,255,255,.72);max-width:56ch}
 body.tilitoimisto .hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35)}
 body.tilitoimisto .hero .btn.ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,.08)}
