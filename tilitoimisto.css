@@ -32,6 +32,9 @@ body.tilitoimisto header.site{border-bottom-color:#efeceb}
 @media (max-width:44rem){
   .offer-inner{gap:.7rem}
   .offer-body{flex:1 1 100%}
+  body.tilitoimisto footer.site .t-footer{
+    flex-wrap:wrap;gap:.5rem;justify-content:center;text-align:center;
+  }
 }
 
 /* ── tumma hero ──────────────────────────────────────────────── */
@@ -201,6 +204,35 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .startup-offer p{margin:0;color:var(--t-muted);max-width:52ch}
 .startup-offer .price-note{margin:.7rem 0 0}
 
+/* ── tositemäärän liukuri ───────────────────────────────────── */
+.price-slider{margin:0 0 1.3rem}
+.price-slider-head{
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  margin:0 0 .55rem;color:var(--t-muted);font-size:.88rem;
+}
+.price-slider-value strong{color:var(--t-ink);font-weight:650}
+.price-slider input[type=range]{
+  -webkit-appearance:none;appearance:none;display:block;width:100%;height:1.35rem;
+  margin:0;background:transparent;cursor:pointer;
+}
+.price-slider input[type=range]::-webkit-slider-runnable-track{
+  height:.35rem;border-radius:999px;background:var(--t-line);
+}
+.price-slider input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;appearance:none;width:1.2rem;height:1.2rem;border-radius:50%;
+  background:var(--red);border:2px solid #fff;
+  box-shadow:0 .15rem .5rem rgba(13,13,15,.28);margin-top:-.43rem;
+}
+.price-slider input[type=range]:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+.price-slider input[type=range]::-moz-range-track{height:.35rem;border-radius:999px;background:var(--t-line)}
+.price-slider input[type=range]::-moz-range-thumb{
+  width:1.2rem;height:1.2rem;border:2px solid #fff;border-radius:50%;background:var(--red);
+}
+.price-slider-scale{
+  display:flex;justify-content:space-between;margin-top:.3rem;
+  color:var(--t-muted);font-size:.72rem;
+}
+
 /* ── markkinavertailu ─────────────────────────────────────────── */
 .price-market{
   display:flex;justify-content:space-between;gap:.75rem;align-items:baseline;
@@ -244,21 +276,22 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 
 /* ── tumma footer ────────────────────────────────────────────── */
 body.tilitoimisto footer.site{
-  display:block;max-width:none;margin-top:0;padding:0;
+  display:block;width:100%;max-width:none;margin:0;padding:0;
   background:var(--t-ink);border-top:1px solid rgba(255,255,255,.12);
+  color:rgba(255,255,255,.66);
 }
 body.tilitoimisto footer.site .t-footer{
   max-width:var(--max);margin-inline:auto;
   display:flex;align-items:center;justify-content:space-between;gap:1rem;
-  padding:1.25rem var(--pad);color:rgba(255,255,255,.62);
+  padding:1.25rem var(--pad);
 }
-.t-footer p{margin:0}
-.t-footer .muted{color:rgba(255,255,255,.62)}
-.t-footer a{
-  color:rgba(255,255,255,.78);text-decoration:underline;
-  text-decoration-color:rgba(255,255,255,.3);text-underline-offset:.2em;
+body.tilitoimisto footer.site p,
+body.tilitoimisto footer.site .muted{color:rgba(255,255,255,.66);margin:0}
+body.tilitoimisto footer.site a{
+  color:rgba(255,255,255,.85);text-decoration:underline;
+  text-decoration-color:rgba(255,255,255,.35);text-underline-offset:.2em;
 }
-.t-footer a:hover{color:#fff;text-decoration-color:var(--red)}
+body.tilitoimisto footer.site a:hover{color:#fff;text-decoration-color:var(--red)}
 
 /* ── responsiivisuus ─────────────────────────────────────────── */
 @media (max-width:52rem){
