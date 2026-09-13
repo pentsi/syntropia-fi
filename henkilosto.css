@@ -34,10 +34,10 @@
   margin:.85rem 0 0;color:var(--t-muted);font-size:.85rem;
 }
 .person p.person-contact a{
-  color:var(--t-ink);text-decoration:underline;
-  text-decoration-color:var(--t-line);text-underline-offset:.15em;
+  color:var(--red-deep);text-decoration:underline;
+  text-decoration-color:rgba(224,40,56,.35);text-underline-offset:.15em;
 }
-.person p.person-contact a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
+.person p.person-contact a:hover{color:var(--red);text-decoration-color:var(--red)}
 
 /* ── alatiimi (esim. Red Team) ──────────────────────────────── */
 .subteam{
