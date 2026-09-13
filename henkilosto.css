@@ -15,23 +15,38 @@
   display:grid;place-items:center;color:var(--t-muted);
   font-size:.78rem;margin:0 0 1rem;
 }
+.person-tag{
+  display:inline-block;margin:0 0 .6rem;padding:.2rem .55rem;border-radius:999px;
+  background:#fff;border:1px solid var(--t-line);color:var(--red-deep);
+  font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+}
+.person-human .person-tag{background:var(--ink);border-color:var(--ink);color:#fff}
 .person h3{margin:0 0 .2rem;font-size:1.05rem;font-weight:650;letter-spacing:-.01em}
 .person-role{margin:0 0 .6rem;color:var(--red-deep);font-weight:600;font-size:.85rem}
 .person p:last-child{margin:0;color:var(--t-muted)}
+
+/* ── siipien kysymysrivi ────────────────────────────────────── */
+.wing-cta{
+  margin:clamp(1.5rem,4vw,2rem) 0 0;
+  padding:clamp(1rem,2.5vw,1.25rem) clamp(1.1rem,3vw,1.5rem);
+  border:1px solid var(--t-line);border-radius:.85rem;background:var(--t-paper);
+  color:var(--t-ink);font-weight:600;
+}
+.wing-cta a{color:var(--red-deep)}
 
 /* ── agenttihenkilökunta (tummalla kaistalla) ───────────────── */
 .agents-lede{
   max-width:56rem;margin:0 0 2rem;color:rgba(255,255,255,.72);
   font-size:clamp(1rem,.98rem + .25vw,1.1rem);text-wrap:pretty;
 }
-.agents{
-  display:grid;gap:clamp(1rem,2.5vw,1.5rem);
-  grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+.setup-grid{
+  display:grid;gap:clamp(1rem,3vw,1.75rem);
+  grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
 }
-.agent{
+.setup-col{
   background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);
-  border-radius:1rem;padding:clamp(1.2rem,2.5vw,1.6rem);
+  border-radius:1rem;padding:clamp(1.2rem,3vw,1.6rem);
 }
-.agent h3{margin:0 0 .25rem;font-size:1.05rem;font-weight:650;color:#fff}
-.agent-role{margin:0 0 .7rem;color:var(--red-soft);font-weight:600;font-size:.85rem}
-.agent p:last-child{margin:0;color:rgba(255,255,255,.72)}
+.setup-col h3{margin:0 0 .5rem;font-size:1.05rem;font-weight:650;color:#fff}
+.setup-col p{margin:0;color:rgba(255,255,255,.72)}
+.t-dark .cta{margin:clamp(1.5rem,4vw,2rem) 0 0}
