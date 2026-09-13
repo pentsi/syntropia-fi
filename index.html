@@ -135,12 +135,22 @@
 
     <div class="product-grid">
       <article class="app">
-      <a class="app-shot" data-empty="Kuvakaappaus tulossa"
-         href="https://bondagentshq.com/?lang=fi&amp;v=20260821" aria-label="Headquarters — avaa tuotesivu">
-        <img src="assets/headquarters-panel.png" alt="Aito Headquarters-näkymä: agenttien keskustelu, aktiivinen tavoite ja autonomisesti luodut tehtävät"
-             width="1280" height="720" loading="lazy" decoding="async"
-             onerror="this.parentNode.classList.add('is-empty');this.remove()">
-      </a>
+      <div class="app-window" aria-hidden="true">
+        <div class="app-window-bar">
+          <span class="app-window-dots"><i></i><i></i><i></i></span>
+          <span class="app-window-title">Headquarters</span>
+          <span class="app-window-badge">Local</span>
+        </div>
+        <div class="app-window-body">
+          <p class="app-window-goal">Tavoite: <strong>Kausi paketissa</strong></p>
+          <ul class="app-window-tasks">
+            <li><span class="dot"></span>Kirjaukset valmiit <span class="tag">valmis</span></li>
+            <li><span class="dot"></span>Täsmäytykset tarkistettu <span class="tag">käynnissä</span></li>
+            <li><span class="dot"></span>Tilinpäätös <span class="tag gate">odottaa hyväksyntää</span></li>
+          </ul>
+          <p class="app-window-foot">3 agenttia · 1 ihmisen portti</p>
+        </div>
+      </div>
 
       <div class="app-body">
         <p class="app-status">Early access</p>
