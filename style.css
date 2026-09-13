@@ -320,6 +320,12 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .app-window-tasks .tag.gate{color:var(--red-deep)}
 .app-window-foot{margin:0;color:var(--muted);font-size:.75rem}
 
+/* ── prosessikaavio (SVG) Headquarters-kortissa ─────────────── */
+.app-visual{display:grid;gap:1rem}
+.app-flow{margin:0}
+.app-flow svg{display:block;width:100%;height:auto}
+.app-flow figcaption{margin:.6rem 0 0;color:var(--muted);font-size:.8rem;text-align:center}
+
 .app-status{
   display:inline-block;margin:0 0 .75rem;padding:.24rem .62rem;border-radius:999px;
   font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
