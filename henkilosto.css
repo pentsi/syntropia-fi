@@ -1,6 +1,12 @@
 /* Syntropia — Henkilöstö-sivun omat tyylit.
    Ladataan style.css:n ja tilitoimisto.css:n jälkeen. */
 
+/* henkilöstösivun napit petrolilla (sivu on tekniikka/agentit) */
+body.henkilosto .btn{background:var(--petrol);border-color:var(--petrol)}
+body.henkilosto .btn:hover{background:var(--petrol-deep);border-color:var(--petrol-deep)}
+body.henkilosto .btn.ghost:hover{border-color:var(--petrol);color:var(--petrol)}
+body.henkilosto .hero .btn.ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,.08)}
+
 /* henkilöstösivun hero: petroli (tekniikka & agentit) */
 body.henkilosto .hero{
   background:

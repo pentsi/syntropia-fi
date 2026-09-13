@@ -12,8 +12,10 @@
   --red-soft:#f6d8db;
   /* toissijaiset sävyt: sininen = kirjanpito, petroli = tekniikka/konsultointi */
   --blue:#1e3a5f;
+  --blue-deep:#152b47;
   --blue-soft:#e8edf4;
   --petrol:#2f5d57;
+  --petrol-deep:#22443f;
   --petrol-soft:#e6eeeb;
   --petrol-light:#9ec6be;
   --max:64rem;

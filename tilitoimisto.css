@@ -35,6 +35,12 @@ body.tilitoimisto header.site{border-bottom-color:#efeceb}
 .offer-price{font-weight:700;letter-spacing:-.02em}
 .offer-note{margin:.25rem 0 0;color:var(--t-muted);font-size:.8rem}
 .offer .btn{white-space:nowrap}
+
+/* napit: tilitoimistosivun ensisijainen korostus on sininen (punainen jää harvoihin
+   kohtiin, kuten Erikoistarjous-merkkiin) */
+body.tilitoimisto .btn{background:var(--blue);border-color:var(--blue)}
+body.tilitoimisto .btn:hover{background:var(--blue-deep);border-color:var(--blue-deep)}
+body.tilitoimisto .btn.ghost:hover{border-color:var(--blue);color:var(--blue)}
 @media (max-width:44rem){
   .offer-inner{gap:.7rem}
   .offer-body{flex:1 1 100%}
@@ -88,14 +94,19 @@ body.tilitoimisto h2::after{display:none}
 }
 .t-step-num{
   flex:0 0 auto;width:2.2rem;height:2.2rem;border-radius:50%;
-  display:grid;place-items:center;background:var(--t-ink);color:#fff;
+  display:grid;place-items:center;background:var(--blue);color:#fff;
   font-weight:650;font-size:.95rem;
 }
 .t-steps h3{margin:0 0 .4rem;font-size:1.02rem;font-weight:650}
 .t-steps p{margin:0;color:var(--t-muted)}
 
 /* ── tumma kaista (kirjanpitoagentit) ────────────────────────── */
-.t-dark{background:var(--t-ink);color:#fff}
+.t-dark{
+  background:
+    radial-gradient(120% 90% at 50% -10%, rgba(30,58,95,.35), transparent 60%),
+    var(--t-ink);
+  color:#fff;
+}
 .t-dark .t-band{padding:clamp(3.5rem,8vw,5.5rem) var(--pad)}
 .t-dark h2{color:#fff}
 .t-split{
@@ -286,16 +297,16 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .t-contact .t-lede{color:rgba(255,255,255,.72);max-width:54ch;margin:0 auto 1.6rem;text-wrap:pretty}
 .t-contact .mail a{
   color:#fff;
-  background-image:linear-gradient(var(--red),var(--red));
+  background-image:linear-gradient(var(--blue),var(--blue));
   background-size:100% 2px;background-repeat:no-repeat;background-position:0 100%;
 }
-.t-contact .mail a:hover{color:var(--red-soft)}
+.t-contact .mail a:hover{color:var(--blue-soft)}
 .t-contact .mail-secondary{color:rgba(255,255,255,.66)}
 .t-contact .mail-secondary a{
   color:rgba(255,255,255,.82);
   text-decoration-color:rgba(255,255,255,.3);
 }
-.t-contact .mail-secondary a:hover{color:#fff;text-decoration-color:var(--red)}
+.t-contact .mail-secondary a:hover{color:#fff;text-decoration-color:var(--blue)}
 
 /* ── tumma footer ────────────────────────────────────────────── */
 body.tilitoimisto footer.site{
@@ -314,7 +325,7 @@ body.tilitoimisto footer.site a{
   color:rgba(255,255,255,.85);text-decoration:underline;
   text-decoration-color:rgba(255,255,255,.35);text-underline-offset:.2em;
 }
-body.tilitoimisto footer.site a:hover{color:#fff;text-decoration-color:var(--red)}
+body.tilitoimisto footer.site a:hover{color:#fff;text-decoration-color:var(--blue)}
 
 /* ── responsiivisuus ─────────────────────────────────────────── */
 @media (max-width:52rem){
