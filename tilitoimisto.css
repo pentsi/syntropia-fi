@@ -170,7 +170,7 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 body.tilitoimisto .btn.price-example-cta{background:var(--red);border-color:var(--red)}
 body.tilitoimisto .btn.price-example-cta:hover{background:var(--red-deep);border-color:var(--red-deep)}
 .price-example-note{
-  margin:1rem 0 0;text-align:center;
+  margin:0 0 1.3rem;text-align:center;
   padding:.6rem .95rem;border-radius:.65rem;
   background:rgba(224,40,56,.16);border:1px solid rgba(224,40,56,.42);
   color:#fff;font-weight:600;font-size:.92rem;line-height:1.4;
