@@ -101,7 +101,7 @@
             <input type="range" id="price-range" min="20" max="250" step="5" value="20" aria-label="Tositemäärä kuukaudessa">
             <div class="price-slider-scale"><span>20</span><span>250+</span></div>
           </div>
-          <p class="price-market"><span>Alan tyypillinen hinta</span><strong id="price-market">89–159 €/kk</strong></p>
+          <p class="price-market"><span>Alin kilpailija</span><strong id="price-market">74 €/kk</strong></p>
           <ul class="price-features">
             <li><strong>Oma nimetty agenttikirjanpitäjä</strong></li>
             <li><strong>Suora sähköpostiyhteys omaan agenttikirjanpitäjään</strong></li>
@@ -370,15 +370,25 @@
   var num = document.getElementById("price-num"),
       tos = document.getElementById("price-tos"),
       mkt = document.getElementById("price-market");
-  function syn(n) { return n <= 40 ? 69 + (n - 20) : (n <= 100 ? 89 + Math.round((n - 40) * 80 / 60) : 169 + (n - 100)); }
-  function low(n) { return n <= 40 ? 89 + Math.round((n - 20) * 0.25) : (n <= 100 ? 94 + Math.round((n - 40) * 124 / 60) : 218 + (n - 100) * 2); }
-  function high(n) { return n <= 40 ? 159 + Math.round((n - 20) * 4.5) : (n <= 100 ? 249 + Math.round((n - 40) * 80 / 60) : 329 + (n - 100) * 2); }
+  function base(n) { return n <= 40 ? 69 + (n - 20) : (n <= 100 ? 89 + Math.round((n - 40) * 80 / 60) : 169 + 2 * (n - 100)); }
+  function comp(n) {
+    if (n <= 20) return 74;
+    if (n <= 30) return 89;
+    if (n <= 40) return 94;
+    if (n <= 50) return 99;
+    if (n <= 60) return 104;
+    if (n <= 120) return 218;
+    if (n <= 180) return 327;
+    if (n <= 240) return 436;
+    return 545;
+  }
+  function price(n) { return Math.min(comp(n), Math.max(base(n), comp(n) - 100)); }
   function upd() {
     var n = parseInt(r.value, 10);
     var plus = n >= 250;
-    num.textContent = syn(n) + " €";
+    num.textContent = price(n) + " €";
     tos.textContent = n + (plus ? "+" : "");
-    mkt.textContent = low(n) + "–" + high(n) + " €/kk";
+    mkt.textContent = comp(n) + " €/kk";
   }
   r.addEventListener("input", upd);
   upd();
