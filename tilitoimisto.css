@@ -195,10 +195,11 @@ body.tilitoimisto .btn.price-example-cta{background:var(--red);border-color:var(
 body.tilitoimisto .btn.price-example-cta:hover{background:var(--red-deep);border-color:var(--red-deep)}
 .price-example-note{
   margin:0 0 1.3rem;text-align:center;
-  padding:.6rem .95rem;border-radius:.65rem;
-  background:rgba(224,40,56,.16);border:1px solid rgba(224,40,56,.42);
-  color:#fff;font-weight:600;font-size:.92rem;line-height:1.4;
+  padding:.75rem 1.05rem;border-radius:.7rem;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);
+  color:rgba(255,255,255,.92);font-weight:500;font-size:.94rem;line-height:1.5;
 }
+.price-example-note strong{color:#fff;font-weight:700;white-space:nowrap}
 .price-example .price-note{color:rgba(255,255,255,.55);margin:.9rem 0 0}
 .price-card{
   display:flex;flex-direction:column;background:#fff;
