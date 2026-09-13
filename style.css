@@ -176,6 +176,14 @@ h1{
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--red);color:var(--red-deep)}
 
+/* värikoodatut napit: sininen = kirjanpito, petroli = tekniikka/konsultointi */
+.btn.accent-blue{background:var(--blue);border-color:var(--blue)}
+.btn.accent-blue:hover{background:var(--blue-deep);border-color:var(--blue-deep)}
+.btn.accent-petrol{background:var(--petrol);border-color:var(--petrol)}
+.btn.accent-petrol:hover{background:var(--petrol-deep);border-color:var(--petrol-deep)}
+.accounting-band .btn.accent-blue{background:var(--blue);border-color:var(--blue);color:#fff}
+.accounting-band .btn.accent-blue:hover{background:var(--blue-deep);border-color:var(--blue-deep)}
+
 /* ── sisältölohkot ───────────────────────────────────────────── */
 .band{max-width:var(--max);margin-inline:auto;padding:clamp(2.5rem,6vw,4rem) var(--pad)}
 
