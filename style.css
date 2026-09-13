@@ -116,6 +116,45 @@ h1{
 
 .cta{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin:2rem 0 0}
 
+/* ── tilitoimisto-välitaso (tumma, viittaa tilitoimistosivun heroon) ── */
+.accounting-band{
+  position:relative;overflow:hidden;color:#fff;text-align:center;
+  background:
+    radial-gradient(120% 100% at 50% -25%, rgba(224,40,56,.32), transparent 62%),
+    linear-gradient(180deg,#151517 0%,#0b0b0c 100%);
+  padding:clamp(3rem,8vw,5.5rem) var(--pad);
+}
+.acct-inner{max-width:var(--max);margin-inline:auto}
+.acct-badge{
+  display:inline-block;margin:0 0 1.1rem;padding:.28rem .7rem;border-radius:999px;
+  background:var(--red);color:#fff;font-size:.7rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+}
+.accounting-band h2{
+  display:block;text-transform:none;letter-spacing:-.02em;color:#fff;
+  font-size:clamp(1.6rem,1.2rem + 1.8vw,2.4rem);font-weight:650;
+  margin:0 0 .9rem;text-wrap:balance;
+}
+.accounting-band h2::after{display:none}
+.acct-text{
+  max-width:54ch;margin:0 auto 1.6rem;color:rgba(255,255,255,.75);
+  font-size:clamp(1rem,.98rem + .25vw,1.12rem);text-wrap:pretty;
+}
+.acct-offer{
+  display:inline-block;margin:0 0 1.8rem;padding:.75rem 1.25rem;
+  border:1px solid rgba(255,255,255,.22);border-radius:.75rem;color:#fff;
+  font-size:clamp(1rem,.98rem + .25vw,1.1rem);
+}
+.acct-offer-label{
+  display:inline-block;margin-right:.5rem;padding:.15rem .5rem;border-radius:999px;
+  background:var(--red);color:#fff;font-size:.68rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+}
+.acct-offer strong{font-weight:700}
+.accounting-band .cta{margin:0}
+.accounting-band .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35)}
+.accounting-band .btn.ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,.08)}
+
 .btn{
   display:inline-block;text-decoration:none;font-weight:550;font-size:.97rem;
   padding:.72rem 1.35rem;border-radius:999px;
