@@ -341,6 +341,25 @@ body.tilitoimisto footer.site a:hover{color:#fff;text-decoration-color:var(--blu
   .price-layout{grid-template-columns:1fr}
   .t-split{grid-template-columns:1fr}
 }
+
+/* ── Syntropia Flow: koko sivun viileä tumma ilme ───────────── */
+body.flow{
+  --t-ink:#eef2f8;
+  --t-paper:#141b25;
+  --t-line:#27313e;
+  --t-muted:#a3aeba;
+  background:
+    radial-gradient(120% 55% at 50% 0%, rgba(30,58,95,.4), transparent 58%),
+    #0e131a;
+  color:var(--t-ink);
+}
+body.flow header.site{border-bottom-color:var(--t-line)}
+body.flow .offer{background:transparent;border-bottom:1px solid var(--t-line)}
+body.flow .price-example{background:#0b1017;border:1px solid var(--t-line)}
+body.flow .price-card{background:var(--t-paper)}
+body.flow .addon{background:var(--t-paper)}
+body.flow .t-contact{background:#0b1017}
+body.flow footer.site{background:#0b1017;border-top-color:rgba(255,255,255,.12)}
 @media (max-width:44rem){
   .t-footer{flex-wrap:wrap;gap:.4rem}
 }
