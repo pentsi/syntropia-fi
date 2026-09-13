@@ -360,6 +360,9 @@ body.tilitoimisto footer.site a:hover{color:#fff;text-decoration-color:var(--blu
   .t-split{grid-template-columns:1fr}
 }
 
+body.tilitoimisto .t-dark h2,
+body.tilitoimisto .t-contact h2{color:#fff}
+
 /* ── Syntropia Flow: viileä, luottamusta herättävä ilme ─────── */
 body.flow{
   --t-ink:#16233a;
