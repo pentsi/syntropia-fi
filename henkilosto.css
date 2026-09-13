@@ -48,19 +48,11 @@
 }
 .wing-cta a{color:var(--red-deep)}
 
-/* ── agenttihenkilökunta (tummalla kaistalla) ───────────────── */
-.agents-lede{
-  max-width:56rem;margin:0 0 2rem;color:rgba(255,255,255,.72);
-  font-size:clamp(1rem,.98rem + .25vw,1.1rem);text-wrap:pretty;
+/* ── agenttisetup-kaista ────────────────────────────────────── */
+.setup-inner{max-width:46rem;margin-inline:auto;text-align:center}
+.setup-inner h2{margin:0 0 .85rem}
+.setup-lede{
+  margin:0 0 clamp(1.5rem,4vw,2rem);color:rgba(255,255,255,.72);
+  font-size:clamp(1rem,.98rem + .25vw,1.12rem);text-wrap:pretty;
 }
-.setup-grid{
-  display:grid;gap:clamp(1rem,3vw,1.75rem);
-  grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
-}
-.setup-col{
-  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);
-  border-radius:1rem;padding:clamp(1.2rem,3vw,1.6rem);
-}
-.setup-col h3{margin:0 0 .5rem;font-size:1.05rem;font-weight:650;color:#fff}
-.setup-col p{margin:0;color:rgba(255,255,255,.72)}
-.t-dark .cta{margin:clamp(1.5rem,4vw,2rem) 0 0}
+.setup-inner .cta{margin:0;justify-content:center}
