@@ -115,10 +115,17 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .price-features li::before{content:"✓";position:absolute;left:0;top:-.02em;color:var(--red);font-weight:700}
 .price-tiers{
   list-style:none;margin:0 0 1.5rem;padding:1.1rem 0 0;
-  border-top:1px solid var(--t-line);display:grid;gap:.55rem;
+  border-top:1px solid var(--t-line);
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;
 }
-.price-tiers li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;color:var(--t-muted)}
-.price-tiers strong{color:var(--t-ink);font-weight:650}
+.price-tiers li{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:.15rem;text-align:center;background:var(--t-paper);
+  border:1px solid var(--t-line);border-radius:.6rem;padding:.65rem .5rem;
+  color:var(--t-muted);font-size:.82rem;line-height:1.25;
+}
+.price-tiers strong{color:var(--t-ink);font-weight:650;font-size:1rem}
+.price-note{margin:.9rem 0 0;color:var(--t-muted);font-size:.82rem}
 .price-cta{margin:auto 0 0;display:flex;align-items:center;gap:.85rem;flex-wrap:wrap}
 .price-link{color:var(--t-muted);font-size:.95rem;text-underline-offset:.2em}
 .price-link:hover{color:var(--red-deep)}
