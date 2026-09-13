@@ -116,8 +116,9 @@ body.tilitoimisto h2::after{display:none}
 /* ── hinnasto ────────────────────────────────────────────────── */
 body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(--t-line)}
 .pricing-lede{
-  font-size:clamp(1.06rem,1rem + .45vw,1.32rem);color:var(--t-ink);
-  font-weight:600;margin:0 0 .55rem;
+  font-size:clamp(1.4rem,1.05rem + 1.6vw,2.1rem);
+  font-weight:650;letter-spacing:-.02em;color:var(--t-ink);
+  margin:0 0 .6rem;
 }
 .pricing-intro{max-width:54rem;color:var(--t-muted);margin:0 0 clamp(2rem,5vw,3rem)}
 .price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.25rem,3vw,2rem)}
@@ -163,6 +164,8 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .price-features{list-style:none;margin:0 0 1.3rem;padding:0;display:grid;gap:.55rem}
 .price-features li{position:relative;padding-left:1.5rem;color:var(--t-muted)}
 .price-features li::before{content:"✓";position:absolute;left:0;top:-.02em;color:var(--red);font-weight:700}
+.price-features li strong{color:var(--t-ink);font-weight:600}
+.price-features .feature-note{color:var(--t-muted)}
 .price-tiers{
   list-style:none;margin:0 0 1.5rem;padding:1.1rem 0 0;
   border-top:1px solid var(--t-line);
