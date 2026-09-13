@@ -5,6 +5,8 @@
 body.henkilosto .btn{background:var(--amber);border-color:var(--amber);color:var(--ink)}
 body.henkilosto .btn:hover{background:var(--amber-deep);border-color:var(--amber-deep);color:#fff}
 body.henkilosto .btn.ghost:hover{border-color:var(--amber-deep);color:var(--amber-deep)}
+body.henkilosto .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+body.henkilosto .btn.ghost:hover{background:rgba(255,255,255,.08);color:#fff;border-color:#fff}
 body.henkilosto .hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35)}
 body.henkilosto .hero .btn.ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,.08)}
 
