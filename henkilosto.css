@@ -31,10 +31,15 @@ body.henkilosto .hero{
 }
 .person-photo{
   width:6.5rem;height:6.5rem;max-width:100%;border-radius:50%;
-  background:#fff;border:1px dashed var(--t-line);
+  background:#fff;border:1px solid var(--t-line);
   display:grid;place-items:center;color:var(--t-muted);
-  font-size:.78rem;margin:0 0 1rem;
+  font-size:.78rem;margin:0 0 1rem;overflow:hidden;padding:0;
 }
+.person-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center 18%;
+}
+.person-photo:not(:has(img)){border-style:dashed}
+
 .person-tag{
   display:inline-block;margin:0 0 .6rem;padding:.2rem .55rem;border-radius:999px;
   background:var(--amber-soft);border:1px solid rgba(245,195,59,.5);color:var(--amber-deep);
