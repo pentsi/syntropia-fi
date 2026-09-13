@@ -373,7 +373,7 @@ footer.site a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
 
 /* ── ylätunnistepalkki ───────────────────────────────────────── */
 .topbar{
-  margin:0;background:var(--red);color:#fff;text-align:center;
+  margin:0;background:var(--ink);color:#fff;text-align:center;
   padding:.6rem var(--pad);font-size:.9rem;line-height:1.4;
 }
 .topbar a{color:#fff;text-decoration:none}
