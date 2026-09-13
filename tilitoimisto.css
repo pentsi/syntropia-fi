@@ -204,6 +204,12 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .startup-offer p{margin:0;color:var(--t-muted);max-width:52ch}
 .startup-offer .price-note{margin:.7rem 0 0}
 
+/* ── kenelle ─────────────────────────────────────────────────── */
+.who{
+  margin:0;color:var(--t-ink);font-weight:600;letter-spacing:-.01em;
+  font-size:clamp(1.15rem,1.02rem + .7vw,1.55rem);
+}
+
 /* ── tositemäärän liukuri ───────────────────────────────────── */
 .price-slider{margin:0 0 1.3rem}
 .price-slider-head{
