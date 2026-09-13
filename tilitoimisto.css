@@ -143,13 +143,14 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
   margin:0 0 .6rem;
 }
 .pricing-intro{max-width:54rem;color:var(--t-muted);margin:0 0 clamp(2rem,5vw,3rem)}
-.price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.25rem,3vw,2rem)}
+.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:clamp(1.25rem,3vw,2rem);max-width:44rem;margin-inline:auto}
 .price-layout{
   display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
   gap:clamp(1.25rem,3vw,2rem);align-items:start;
 }
 .price-layout .price-grid{grid-template-columns:1fr}
 .price-example{
+  max-width:52rem;margin:0 auto clamp(2rem,5vw,3rem);
   background:var(--t-ink);color:#fff;border-radius:1rem;
   padding:clamp(1.4rem,3vw,2rem);
 }
