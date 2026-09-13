@@ -214,6 +214,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 }
 h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .grid p{margin:0;color:var(--muted)}
+.grid p.grid-cta{margin-top:1.1rem}
 
 /* ── palvelut ───────────────────────────────────────────────── */
 .services{
