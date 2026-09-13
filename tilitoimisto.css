@@ -100,6 +100,27 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 }
 .pricing-intro{max-width:54rem;color:var(--t-muted);margin:0 0 clamp(2rem,5vw,3rem)}
 .price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.25rem,3vw,2rem)}
+.price-layout{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(1.25rem,3vw,2rem);align-items:start;
+}
+.price-layout .price-grid{grid-template-columns:1fr}
+.price-example{
+  background:var(--t-ink);color:#fff;border-radius:1rem;
+  padding:clamp(1.4rem,3vw,2rem);
+}
+.price-example h3{margin:0 0 .5rem;font-size:1.15rem;font-weight:650;color:#fff}
+.price-example-lead{margin:0 0 1.2rem;color:rgba(255,255,255,.7);font-size:.95rem}
+.price-example-rows{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.price-example-rows li{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;color:rgba(255,255,255,.8);font-size:.95rem}
+.price-example-rows strong{color:#fff;font-weight:600;white-space:nowrap}
+.price-example-total{
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  margin:1.2rem 0 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.18);
+  color:#fff;font-size:.95rem;
+}
+.price-example-total strong{font-size:clamp(1.6rem,1.2rem + 1.4vw,2.1rem);font-weight:700;letter-spacing:-.02em}
+.price-example .price-note{color:rgba(255,255,255,.55);margin:.9rem 0 0}
 .price-card{
   display:flex;flex-direction:column;background:#fff;
   border:1px solid var(--t-line);border-radius:1rem;
@@ -228,6 +249,7 @@ body.tilitoimisto footer.site .t-footer{
 /* ── responsiivisuus ─────────────────────────────────────────── */
 @media (max-width:52rem){
   .price-grid,.addon-grid{grid-template-columns:1fr}
+  .price-layout{grid-template-columns:1fr}
   .t-split{grid-template-columns:1fr}
 }
 @media (max-width:44rem){
