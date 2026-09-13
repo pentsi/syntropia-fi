@@ -98,8 +98,8 @@
               <label for="price-range">Tositemäärä kuukaudessa</label>
               <span class="price-slider-value"><strong id="price-tos">20</strong> tositetta</span>
             </div>
-            <input type="range" id="price-range" min="20" max="100" step="5" value="20" aria-label="Tositemäärä kuukaudessa">
-            <div class="price-slider-scale"><span>20</span><span>40</span><span>60</span><span>80</span><span>100</span></div>
+            <input type="range" id="price-range" min="20" max="250" step="5" value="20" aria-label="Tositemäärä kuukaudessa">
+            <div class="price-slider-scale"><span>20</span><span>250+</span></div>
           </div>
           <p class="price-market"><span>Alan tyypillinen hinta</span><strong id="price-market">89–159 €/kk</strong></p>
           <ul class="price-features">
@@ -370,13 +370,14 @@
   var num = document.getElementById("price-num"),
       tos = document.getElementById("price-tos"),
       mkt = document.getElementById("price-market");
-  function syn(n) { return n <= 40 ? 69 + (n - 20) : 89 + Math.round((n - 40) * 80 / 60); }
-  function low(n) { return n <= 40 ? 89 + Math.round((n - 20) * 0.25) : 94 + Math.round((n - 40) * 124 / 60); }
-  function high(n) { return n <= 40 ? 159 + Math.round((n - 20) * 4.5) : 249 + Math.round((n - 40) * 80 / 60); }
+  function syn(n) { return n <= 40 ? 69 + (n - 20) : (n <= 100 ? 89 + Math.round((n - 40) * 80 / 60) : 169 + (n - 100)); }
+  function low(n) { return n <= 40 ? 89 + Math.round((n - 20) * 0.25) : (n <= 100 ? 94 + Math.round((n - 40) * 124 / 60) : 218 + (n - 100) * 2); }
+  function high(n) { return n <= 40 ? 159 + Math.round((n - 20) * 4.5) : (n <= 100 ? 249 + Math.round((n - 40) * 80 / 60) : 329 + (n - 100) * 2); }
   function upd() {
     var n = parseInt(r.value, 10);
+    var plus = n >= 250;
     num.textContent = syn(n) + " €";
-    tos.textContent = n;
+    tos.textContent = n + (plus ? "+" : "");
     mkt.textContent = low(n) + "–" + high(n) + " €/kk";
   }
   r.addEventListener("input", upd);
