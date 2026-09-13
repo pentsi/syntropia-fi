@@ -1,17 +1,18 @@
 /* Syntropia — Henkilöstö-sivun omat tyylit.
    Ladataan style.css:n ja tilitoimisto.css:n jälkeen. */
 
-/* henkilöstösivun napit petrolilla (sivu on tekniikka/agentit) */
-body.henkilosto .btn{background:var(--petrol);border-color:var(--petrol)}
-body.henkilosto .btn:hover{background:var(--petrol-deep);border-color:var(--petrol-deep)}
-body.henkilosto .btn.ghost:hover{border-color:var(--petrol);color:var(--petrol)}
+/* henkilöstösivun napit kultaisella (sivu on agentit/sovellukset) */
+body.henkilosto .btn{background:var(--amber);border-color:var(--amber);color:var(--ink)}
+body.henkilosto .btn:hover{background:var(--amber-deep);border-color:var(--amber-deep);color:#fff}
+body.henkilosto .btn.ghost:hover{border-color:var(--amber-deep);color:var(--amber-deep)}
+body.henkilosto .hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35)}
 body.henkilosto .hero .btn.ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,.08)}
 
-/* henkilöstösivun hero: petroli (tekniikka & agentit) */
+/* henkilöstösivun hero: lämmin kultainen hehku */
 body.henkilosto .hero{
   background:
-    radial-gradient(120% 100% at 50% -25%, rgba(47,93,87,.55), transparent 62%),
-    linear-gradient(180deg,#121a18 0%,#0b0b0c 100%);
+    radial-gradient(120% 100% at 50% -25%, rgba(227,165,47,.42), transparent 62%),
+    linear-gradient(180deg,#1a1710 0%,#0b0b0c 100%);
 }
 
 /* ── henkilöstösivun hero-lisäys ───────────────────────────── */
@@ -36,7 +37,7 @@ body.henkilosto .hero{
 }
 .person-tag{
   display:inline-block;margin:0 0 .6rem;padding:.2rem .55rem;border-radius:999px;
-  background:#fff;border:1px solid var(--t-line);color:var(--petrol);
+  background:var(--amber-soft);border:1px solid rgba(227,165,47,.5);color:var(--amber-deep);
   font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
 }
 .person-human .person-tag{background:var(--ink);border-color:var(--ink);color:#fff}
@@ -69,7 +70,7 @@ body.henkilosto .hero{
   border:1px solid var(--t-line);border-radius:.85rem;background:var(--t-paper);
   color:var(--t-ink);font-weight:600;
 }
-.wing-cta a{color:var(--petrol)}
+.wing-cta a{color:var(--amber-deep)}
 
 /* ── agenttisetup-kaista ────────────────────────────────────── */
 .setup-inner{max-width:46rem;margin-inline:auto;text-align:center}
