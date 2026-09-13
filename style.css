@@ -457,6 +457,10 @@ footer.site a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
 .topbar a{color:#fff;text-decoration:none}
 .topbar a:hover{text-decoration:underline}
 .topbar-sep{opacity:.55;padding:0 .1rem}
+.topbar-sub{
+  display:block;margin-top:.15rem;font-size:.72rem;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;opacity:.8;
+}
 
 /* ── usein kysytyt ───────────────────────────────────────────── */
 .faq{display:grid;gap:.7rem;max-width:48rem}
