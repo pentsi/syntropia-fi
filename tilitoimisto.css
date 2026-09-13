@@ -48,8 +48,8 @@ body.tilitoimisto .hero{
   max-width:none;margin:0;color:#fff;text-align:center;
   position:relative;isolation:auto;overflow:visible;
   background:
-    radial-gradient(120% 100% at 50% -25%, rgba(224,40,56,.34), transparent 62%),
-    linear-gradient(180deg,#151517 0%,#0b0b0c 100%);
+    radial-gradient(120% 100% at 50% -25%, rgba(30,58,95,.55), transparent 62%),
+    linear-gradient(180deg,#12151b 0%,#0b0b0c 100%);
   padding:clamp(4rem,11vw,8rem) var(--pad) clamp(3.5rem,9vw,6.5rem);
 }
 body.tilitoimisto .hero h1{color:#fff;max-width:22ch;margin-inline:auto}
@@ -110,7 +110,7 @@ body.tilitoimisto h2::after{display:none}
 .t-points{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
 .t-points li{position:relative;padding-left:1.5rem;color:rgba(255,255,255,.82)}
 .t-points li::before{
-  content:"✓";position:absolute;left:0;top:-.02em;color:var(--red);font-weight:700;
+  content:"✓";position:absolute;left:0;top:-.02em;color:var(--blue);font-weight:700;
 }
 
 /* ── callout ─────────────────────────────────────────────────── */
@@ -159,7 +159,7 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .price-example-note{
   margin:1rem 0 0;text-align:center;
   padding:.6rem .95rem;border-radius:.65rem;
-  background:rgba(224,40,56,.18);border:1px solid rgba(224,40,56,.5);
+  background:rgba(30,58,95,.45);border:1px solid rgba(120,170,230,.45);
   color:#fff;font-weight:600;font-size:.92rem;line-height:1.4;
 }
 .price-example .price-note{color:rgba(255,255,255,.55);margin:.9rem 0 0}
@@ -183,7 +183,7 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .price-per{color:var(--t-muted)}
 .price-features{list-style:none;margin:0 0 1.3rem;padding:0;display:grid;gap:.55rem}
 .price-features li{position:relative;padding-left:1.5rem;color:var(--t-muted)}
-.price-features li::before{content:"✓";position:absolute;left:0;top:-.02em;color:var(--red);font-weight:700}
+.price-features li::before{content:"✓";position:absolute;left:0;top:-.02em;color:var(--blue);font-weight:700}
 .price-features li strong{color:var(--t-ink);font-weight:600}
 .price-features .feature-note{color:var(--t-muted)}
 .price-tiers{
@@ -201,7 +201,7 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .price-note{margin:.9rem 0 0;color:var(--t-muted);font-size:.82rem}
 .price-cta{margin:auto 0 0;display:flex;align-items:center;gap:.85rem;flex-wrap:wrap}
 .price-link{color:var(--t-muted);font-size:.95rem;text-underline-offset:.2em}
-.price-link:hover{color:var(--red-deep)}
+.price-link:hover{color:var(--blue)}
 .addons-title{margin:clamp(2.5rem,6vw,3.5rem) 0 1rem;font-size:1.1rem;font-weight:650}
 .addon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:clamp(1rem,2.5vw,1.5rem)}
 .addon{background:#fff;border:1px solid var(--t-line);border-radius:.85rem;padding:1.15rem 1.25rem}
@@ -243,13 +243,13 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 }
 .price-slider input[type=range]::-webkit-slider-thumb{
   -webkit-appearance:none;appearance:none;width:1.2rem;height:1.2rem;border-radius:50%;
-  background:var(--red);border:2px solid #fff;
+  background:var(--blue);border:2px solid #fff;
   box-shadow:0 .15rem .5rem rgba(13,13,15,.28);margin-top:-.43rem;
 }
-.price-slider input[type=range]:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+.price-slider input[type=range]:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
 .price-slider input[type=range]::-moz-range-track{height:.35rem;border-radius:999px;background:var(--t-line)}
 .price-slider input[type=range]::-moz-range-thumb{
-  width:1.2rem;height:1.2rem;border:2px solid #fff;border-radius:50%;background:var(--red);
+  width:1.2rem;height:1.2rem;border:2px solid #fff;border-radius:50%;background:var(--blue);
 }
 .price-slider-scale{
   display:flex;justify-content:space-between;margin-top:.3rem;
@@ -275,7 +275,7 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .faq details:last-child{border-bottom:1px solid var(--t-line)}
 .faq summary{cursor:pointer;list-style:none;padding:1.15rem 0;font-weight:600}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";float:right;color:var(--red);font-weight:700;font-size:1.15rem;line-height:1}
+.faq summary::after{content:"+";float:right;color:var(--blue);font-weight:700;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
 .faq p{margin:0;padding:0 0 1.15rem;color:var(--t-muted);max-width:60ch}
 

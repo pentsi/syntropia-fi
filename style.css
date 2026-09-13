@@ -10,6 +10,12 @@
   --red:#e02838;
   --red-deep:#b8121f;
   --red-soft:#f6d8db;
+  /* toissijaiset sävyt: sininen = kirjanpito, petroli = tekniikka/konsultointi */
+  --blue:#1e3a5f;
+  --blue-soft:#e8edf4;
+  --petrol:#2f5d57;
+  --petrol-soft:#e6eeeb;
+  --petrol-light:#9ec6be;
   --max:64rem;
   --pad:clamp(1.25rem, 4vw, 2.5rem);
 }
@@ -120,8 +126,8 @@ h1{
 .accounting-band{
   position:relative;overflow:hidden;color:#fff;text-align:center;
   background:
-    radial-gradient(120% 100% at 50% -25%, rgba(224,40,56,.32), transparent 62%),
-    linear-gradient(180deg,#151517 0%,#0b0b0c 100%);
+    radial-gradient(120% 100% at 50% -25%, rgba(30,58,95,.55), transparent 62%),
+    linear-gradient(180deg,#12151b 0%,#0b0b0c 100%);
   padding:clamp(3rem,8vw,5.5rem) var(--pad);
 }
 .acct-inner{max-width:var(--max);margin-inline:auto}
@@ -185,7 +191,10 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 .grid article{position:relative;padding-top:1.1rem}
 .grid article::before{
   content:"";position:absolute;top:0;left:0;width:2.25rem;height:2px;
-  background:linear-gradient(90deg,var(--red),var(--red-soft));
+  background:linear-gradient(90deg,var(--petrol),var(--petrol-soft));
+}
+.grid article.accent-blue::before{
+  background:linear-gradient(90deg,var(--blue),var(--blue-soft));
 }
 h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .grid p{margin:0;color:var(--muted)}
@@ -230,9 +239,9 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .consultation{
   margin-top:clamp(1rem,3vw,2rem);
   padding:clamp(2.25rem,5vw,3.5rem) clamp(1.5rem,4vw,2.75rem);
-  border:1px solid rgba(224,40,56,.45);border-radius:1rem;
-  background:linear-gradient(120deg,#fff,var(--red-soft));
-  box-shadow:0 1rem 2.4rem rgba(184,18,31,.08);
+  border:1px solid rgba(47,93,87,.45);border-radius:1rem;
+  background:linear-gradient(120deg,#fff,var(--petrol-soft));
+  box-shadow:0 1rem 2.4rem rgba(34,68,63,.08);
 }
 .consultation-grid{
   display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
@@ -244,7 +253,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .consultation-points li{position:relative;padding-left:1.15rem;color:var(--muted)}
 .consultation-points li::before{
   content:"";position:absolute;left:0;top:.68em;width:.42rem;height:.42rem;
-  border-radius:50%;background:var(--red);
+  border-radius:50%;background:var(--petrol);
 }
 .consultation-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem!important}
 .text-action{color:var(--ink);font-weight:600;text-underline-offset:.2em}
@@ -294,7 +303,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .app-window-title{font-weight:600;font-size:.82rem}
 .app-window-badge{
   margin-left:auto;padding:.15rem .5rem;border-radius:999px;
-  background:var(--red-soft);color:var(--red-deep);
+  background:var(--petrol-soft);color:var(--petrol);
   font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
 }
 .app-window-body{padding:1rem .9rem}
@@ -306,7 +315,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
   padding:.5rem .6rem;border:1px solid var(--line);border-radius:.5rem;background:#fcfbfa;
   color:var(--muted);font-size:.82rem;
 }
-.app-window-tasks .dot{flex:0 0 auto;width:.45rem;height:.45rem;border-radius:50%;background:var(--red)}
+.app-window-tasks .dot{flex:0 0 auto;width:.45rem;height:.45rem;border-radius:50%;background:var(--petrol)}
 .app-window-tasks .tag{margin-left:auto;font-size:.68rem;font-weight:600;color:var(--muted);white-space:nowrap}
 .app-window-tasks .tag.gate{color:var(--red-deep)}
 .app-window-foot{margin:0;color:var(--muted);font-size:.75rem}
@@ -314,7 +323,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .app-status{
   display:inline-block;margin:0 0 .75rem;padding:.24rem .62rem;border-radius:999px;
   font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
-  color:var(--red-deep);background:var(--red-soft);
+  color:var(--petrol);background:var(--petrol-soft);
 }
 
 .app-body{max-width:32rem}
@@ -325,7 +334,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .app-points li{position:relative;padding-left:1.15rem;color:var(--muted);font-size:.97rem}
 .app-points li::before{
   content:"";position:absolute;left:0;top:.62em;width:.42rem;height:.42rem;
-  border-radius:50%;background:var(--red);
+  border-radius:50%;background:var(--petrol);
 }
 .app-meta{margin:0 0 1.4rem}
 .app-meta strong{font-size:1.22rem;letter-spacing:-.01em}
@@ -363,7 +372,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 }
 .product-card::after{
   content:"";position:absolute;right:-4rem;top:-4rem;width:10rem;height:10rem;
-  border-radius:50%;background:var(--red-soft);opacity:.55;pointer-events:none;
+  border-radius:50%;background:var(--petrol-soft);opacity:.55;pointer-events:none;
 }
 .product-card h3{font-size:clamp(1.2rem,1.05rem + .65vw,1.55rem);margin-bottom:.65rem}
 .product-card h3.singularity-rainbow{
@@ -383,7 +392,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .product-points li{position:relative;padding-left:1.1rem;color:var(--muted);font-size:.95rem}
 .product-points li::before{
   content:"";position:absolute;left:0;top:.66em;width:.38rem;height:.38rem;
-  border-radius:50%;background:var(--red);
+  border-radius:50%;background:var(--petrol);
 }
 .product-note{margin:1.5rem 0 0;color:var(--muted);font-size:.92rem;font-weight:550}
 
@@ -397,7 +406,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .legal li{position:relative;padding-left:1.15rem;color:var(--muted)}
 .legal li::before{
   content:"";position:absolute;left:0;top:.62em;width:.4rem;height:.4rem;
-  border-radius:50%;background:var(--red);
+  border-radius:50%;background:var(--blue);
 }
 .legal strong{color:var(--ink)}
 .legal a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:.2em}
