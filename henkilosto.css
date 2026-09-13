@@ -1,0 +1,20 @@
+/* Syntropia — Henkilöstö-sivun omat tyylit.
+   Ladataan style.css:n ja tilitoimisto.css:n jälkeen. */
+
+.people{
+  display:grid;gap:clamp(1rem,2.5vw,1.5rem);
+  grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+}
+.person{
+  background:var(--t-paper);border:1px solid var(--t-line);border-radius:1rem;
+  padding:clamp(1.2rem,2.5vw,1.6rem);
+}
+.person-photo{
+  width:6.5rem;height:6.5rem;max-width:100%;border-radius:50%;
+  background:#fff;border:1px dashed var(--t-line);
+  display:grid;place-items:center;color:var(--t-muted);
+  font-size:.78rem;margin:0 0 1rem;
+}
+.person h3{margin:0 0 .2rem;font-size:1.05rem;font-weight:650;letter-spacing:-.01em}
+.person-role{margin:0 0 .6rem;color:var(--red-deep);font-weight:600;font-size:.85rem}
+.person p:last-child{margin:0;color:var(--t-muted)}
