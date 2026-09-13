@@ -13,8 +13,9 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://syntropia.fi/tilitoimisto.html">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tilitoimisto.css">
 </head>
-<body>
+<body class="tilitoimisto">
 
 <a class="skip" href="#main">Siirry sisältöön</a>
 
@@ -43,9 +44,92 @@
       vähäisiin poikkeuksiin.
     </p>
     <p class="cta">
-      <a class="btn" href="#yhteys">Kerro tarpeestasi</a>
-      <a class="btn ghost" href="tel:+358443811950">Soita 044 3811950</a>
+      <a class="btn" href="#hinnat">Katso hinnasto</a>
+      <a class="btn ghost" href="#yhteys">Kerro tarpeestasi</a>
     </p>
+  </section>
+
+  <section id="hinnat" class="pricing">
+    <div class="band pricing-inner">
+      <h2>Kirjanpidon hinta</h2>
+      <p class="pricing-lede">Selkeä kiinteä kuukausihinta. Ei yllätyksiä.</p>
+      <p class="pricing-intro">
+        Kaikki olennainen sisältyy hintaan: saat oman nimetyn kirjanpitäjän,
+        henkilökohtaista neuvontaa ja kirjanpito-ohjelmiston, jonka kautta
+        aineiston toimittaminen on helppoa. Myös tilinpäätös ja veroilmoitus
+        vuoden lopussa sisältyvät hintaan ilman erillisveloitusta.
+      </p>
+
+      <div class="price-grid">
+        <article class="price-card">
+          <h3>Toiminimi</h3>
+          <p class="price-amount"><span class="price-num">69 €</span><span class="price-per">/ kk</span></p>
+          <ul class="price-features">
+            <li>Kirjanpito (0–10 tositetta/kk)</li>
+            <li>Oma nimetty kirjanpitäjä</li>
+            <li>Kirjanpidon neuvonta</li>
+            <li>ALV-ilmoitukset</li>
+            <li>Veroilmoitus</li>
+            <li>Ei ohjelmistokuluja</li>
+          </ul>
+          <ul class="price-tiers">
+            <li><span>20 tositetta/kk</span><strong>129 €/kk</strong></li>
+            <li><span>40 tositetta/kk</span><strong>169 €/kk</strong></li>
+          </ul>
+          <p class="price-cta">
+            <a class="btn" href="mailto:santeri@syntropia.fi?subject=Toiminimen%20kirjanpito">Tutustu toiminimen palveluun</a>
+            <a class="price-link" href="#hinnat">tai koko hinnastoon</a>
+          </p>
+        </article>
+
+        <article class="price-card">
+          <h3>Osakeyhtiö</h3>
+          <p class="price-amount"><span class="price-num">99 €</span><span class="price-per">/ kk</span></p>
+          <ul class="price-features">
+            <li>Kirjanpito (0–10 tositetta/kk)</li>
+            <li>Oma nimetty kirjanpitäjä</li>
+            <li>Kirjanpidon neuvonta</li>
+            <li>ALV-ilmoitukset</li>
+            <li>Tilinpäätös ja veroilmoitus</li>
+            <li>Pankkiyhteys</li>
+            <li>Ei ohjelmistokuluja</li>
+          </ul>
+          <ul class="price-tiers">
+            <li><span>20 tositetta/kk</span><strong>149 €/kk</strong></li>
+            <li><span>40 tositetta/kk</span><strong>249 €/kk</strong></li>
+          </ul>
+          <p class="price-cta">
+            <a class="btn" href="mailto:santeri@syntropia.fi?subject=Osakeyhti%C3%B6n%20kirjanpito">Tutustu kirjanpitopalveluun</a>
+            <a class="price-link" href="#hinnat">tai koko hinnastoon</a>
+          </p>
+        </article>
+      </div>
+
+      <h3 class="addons-title">Lisät kiinteään hintaan</h3>
+      <div class="addon-grid">
+        <article class="addon">
+          <h4>Palkanlaskenta</h4>
+          <p>Yritykselle, jolla on työntekijöitä</p>
+          <p class="addon-price">+30 € /hlö/kk</p>
+        </article>
+        <article class="addon">
+          <h4>Ulkomaankauppa</h4>
+          <p>Yrityksellä on OSS- tai EU-yhteisömyyntiä</p>
+          <p class="addon-price">+50 € /kk</p>
+        </article>
+        <article class="addon">
+          <h4>Sijoitustoiminta</h4>
+          <p>Yritys sijoittaa varojaan, esim. Nordnetissä</p>
+          <p class="addon-price">+89 € /h</p>
+        </article>
+      </div>
+
+      <p class="price-footnote">
+        Kuukausihinta sovitaan aina tapauskohtaisesti tarjouksella ja siihen
+        vaikuttaa mm. yritysmuoto, toimiala ja alv-ilmoitusväli. Hintoihin
+        lisätään kulloinkin voimassaoleva arvonlisävero.
+      </p>
+    </div>
   </section>
 
   <section id="palvelut" class="band">
@@ -186,17 +270,6 @@
     </p>
     <p class="cta" style="justify-content:flex-start">
       <a class="btn" href="mailto:santeri@syntropia.fi?subject=Tilitoimiston%20vaihto">Aloita vaihto</a>
-    </p>
-  </section>
-
-  <section id="hinnat" class="band">
-    <h2>Hinnat</h2>
-    <p class="section-intro">
-      Hinta perustuu tositemäärään ja palvelun laajuuteen. Pyydä tarjous —
-      saat selkeän kuukausihinnan, johon kuuluu sovellus ja kirjanpito.
-    </p>
-    <p class="cta" style="justify-content:flex-start">
-      <a class="btn" href="mailto:santeri@syntropia.fi?subject=Tarjouspyynt%C3%B6%20tilitoimistosta">Pyydä tarjous</a>
     </p>
   </section>
 
