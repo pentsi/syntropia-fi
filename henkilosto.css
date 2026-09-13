@@ -39,6 +39,16 @@
 }
 .person p.person-contact a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
 
+/* ── alatiimi (esim. Red Team) ──────────────────────────────── */
+.subteam{
+  margin:clamp(1.5rem,4vw,2rem) 0 0;
+  padding:clamp(1.1rem,3vw,1.5rem);
+  border:1px dashed var(--t-line);border-radius:1rem;
+  background:rgba(255,255,255,.55);
+}
+.subteam-title{margin:0 0 .2rem;font-size:1.05rem;font-weight:650;letter-spacing:-.01em}
+.subteam-lede{margin:0 0 1rem;color:var(--t-muted);font-size:.9rem}
+
 /* ── siipien kysymysrivi ────────────────────────────────────── */
 .wing-cta{
   margin:clamp(1.5rem,4vw,2rem) 0 0;
