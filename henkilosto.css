@@ -1,6 +1,12 @@
 /* Syntropia — Henkilöstö-sivun omat tyylit.
    Ladataan style.css:n ja tilitoimisto.css:n jälkeen. */
 
+/* ── henkilöstösivun hero-lisäys ───────────────────────────── */
+.hero-note{
+  max-width:54ch;margin:1.1rem auto 0;color:rgba(255,255,255,.6);
+  font-size:clamp(.95rem,.93rem + .2vw,1.05rem);
+}
+
 .people{
   display:grid;gap:clamp(1rem,2.5vw,1.5rem);
   grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
