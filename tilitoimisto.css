@@ -13,6 +13,27 @@ body.tilitoimisto{
 
 body.tilitoimisto header.site{border-bottom-color:#efeceb}
 
+/* ── erikoistarjous-palkki heron alla ──────────────────────── */
+.offer{background:#fff}
+.offer-inner{
+  max-width:var(--max);margin-inline:auto;
+  display:flex;align-items:center;gap:clamp(.75rem,2vw,1.25rem);flex-wrap:wrap;
+  padding:clamp(1rem,3vw,1.4rem) var(--pad);
+}
+.offer-badge{
+  margin:0;padding:.28rem .7rem;border-radius:999px;background:var(--red);color:#fff;
+  font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;
+}
+.offer-body{flex:1 1 20rem}
+.offer-text{margin:0;color:var(--t-ink);font-size:clamp(.98rem,.95rem + .2vw,1.06rem)}
+.offer-price{font-weight:700;letter-spacing:-.02em}
+.offer-note{margin:.25rem 0 0;color:var(--t-muted);font-size:.8rem}
+.offer .btn{white-space:nowrap}
+@media (max-width:44rem){
+  .offer-inner{gap:.7rem}
+  .offer-body{flex:1 1 100%}
+}
+
 /* ── tumma hero ──────────────────────────────────────────────── */
 body.tilitoimisto .hero{
   max-width:none;margin:0;color:#fff;text-align:center;
