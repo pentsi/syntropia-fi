@@ -151,6 +151,9 @@ h1{
   letter-spacing:.12em;text-transform:uppercase;
 }
 .acct-offer strong{font-weight:700}
+.acct-offers{display:grid;gap:.7rem;justify-items:center;margin:0 0 1.8rem}
+.acct-offers .acct-offer{margin:0}
+.acct-offer-label.ghost{background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff}
 .accounting-band .cta{margin:0}
 .accounting-band .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35)}
 .accounting-band .btn.ghost:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,.08)}
