@@ -30,6 +30,14 @@
 .person h3{margin:0 0 .2rem;font-size:1.05rem;font-weight:650;letter-spacing:-.01em}
 .person-role{margin:0 0 .6rem;color:var(--red-deep);font-weight:600;font-size:.85rem}
 .person p:last-child{margin:0;color:var(--t-muted)}
+.person p.person-contact{
+  margin:.85rem 0 0;color:var(--t-muted);font-size:.85rem;
+}
+.person p.person-contact a{
+  color:var(--t-ink);text-decoration:underline;
+  text-decoration-color:var(--t-line);text-underline-offset:.15em;
+}
+.person p.person-contact a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
 
 /* ── siipien kysymysrivi ────────────────────────────────────── */
 .wing-cta{
