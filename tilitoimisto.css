@@ -177,27 +177,17 @@ body.tilitoimisto .pricing{background:var(--t-paper);border-block:1px solid var(
 .startup-offer p{margin:0;color:var(--t-muted);max-width:52ch}
 .startup-offer .price-note{margin:.7rem 0 0}
 
-/* ── vertailu muiden tilitoimistojen hintoihin ──────────────── */
-.market-compare{
-  margin-top:clamp(1.5rem,4vw,2.25rem);border:1px solid var(--t-line);
-  border-radius:1rem;background:#fff;padding:clamp(1.4rem,3.5vw,2rem);
+/* ── markkinavertailu ─────────────────────────────────────────── */
+.price-market{
+  display:flex;justify-content:space-between;gap:.75rem;align-items:baseline;
+  margin:-.6rem 0 1.2rem;padding:.5rem .7rem;border-radius:.5rem;
+  background:var(--t-paper);color:var(--t-muted);font-size:.82rem;
 }
-.market-compare h3{margin:0 0 .4rem;font-size:1.05rem;font-weight:650}
-.market-lead{margin:0 0 1.1rem;color:var(--t-muted);font-size:.94rem}
-.market-rows{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
-.market-rows li{
-  display:grid;grid-template-columns:minmax(7rem,1fr) auto auto;
-  gap:.75rem;align-items:baseline;
-  padding:.7rem .9rem;background:var(--t-paper);
-  border:1px solid var(--t-line);border-radius:.65rem;
-}
-.market-type{font-weight:600}
-.market-us{font-weight:650;white-space:nowrap}
-.market-others{color:var(--t-muted);font-size:.9rem;text-align:right}
-.market-source{margin:1rem 0 0;color:var(--t-muted);font-size:.8rem}
-@media (max-width:40rem){
-  .market-rows li{grid-template-columns:1fr;gap:.2rem}
-  .market-others{text-align:left}
+.price-market strong{color:var(--t-ink);font-weight:600;white-space:nowrap}
+.price-tiers em{font-style:normal;color:var(--t-muted);font-size:.72rem}
+.market-note{
+  margin:clamp(1.5rem,4vw,2.25rem) 0 0;color:var(--t-muted);
+  font-size:.82rem;max-width:60rem;
 }
 
 /* ── UKK: viivamainen lista, ei kortteja ─────────────────────── */
