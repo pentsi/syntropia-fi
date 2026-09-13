@@ -332,6 +332,26 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 footer.site a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:.2em}
 footer.site a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
 
+/* ── ylätunnistepalkki ───────────────────────────────────────── */
+.topbar{
+  margin:0;background:var(--red);color:#fff;text-align:center;
+  padding:.6rem var(--pad);font-size:.9rem;line-height:1.4;
+}
+.topbar a{color:#fff;text-decoration:none}
+.topbar a:hover{text-decoration:underline}
+
+/* ── usein kysytyt ───────────────────────────────────────────── */
+.faq{display:grid;gap:.7rem;max-width:48rem}
+.faq details{border:1px solid var(--line);border-radius:.7rem;background:#fff}
+.faq summary{
+  cursor:pointer;list-style:none;padding:1rem 1.15rem;font-weight:600;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red);font-weight:700;font-size:1.15rem;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin:0;padding:0 1.15rem 1.15rem;color:var(--muted)}
+
 @media (max-width:44rem){
   header.site,footer.site{flex-wrap:wrap;align-items:center;gap:.65rem}
   header.site nav{flex:1 0 100%;justify-content:space-between;gap:.5rem;font-size:.88rem}
