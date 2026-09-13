@@ -343,7 +343,7 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 .app-status{
   display:inline-block;margin:0 0 .75rem;padding:.24rem .62rem;border-radius:999px;
   font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
-  color:var(--petrol);background:var(--petrol-soft);
+  color:var(--red-deep);background:var(--red-soft);
 }
 
 .app-body{max-width:32rem}
@@ -436,7 +436,7 @@ footer.site a:hover{color:var(--red-deep);text-decoration-color:var(--red)}
 
 /* ── ylätunnistepalkki ───────────────────────────────────────── */
 .topbar{
-  margin:0;background:var(--ink);color:#fff;text-align:center;
+  margin:0;background:var(--red);color:#fff;text-align:center;
   padding:.6rem var(--pad);font-size:.9rem;line-height:1.4;
 }
 .topbar a{color:#fff;text-decoration:none}
