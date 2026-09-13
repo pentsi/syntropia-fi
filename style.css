@@ -134,11 +134,11 @@ h1{
   background:
     radial-gradient(120% 100% at 50% -25%, rgba(30,58,95,.55), transparent 62%),
     linear-gradient(180deg,#12151b 0%,#0b0b0c 100%);
-  padding:clamp(2.25rem,5.5vw,3.75rem) var(--pad);
+  padding:clamp(1.6rem,3.5vw,2.5rem) var(--pad);
 }
 .acct-inner{max-width:var(--max);margin-inline:auto}
 .acct-kicker{
-  margin:0 0 1rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
+  margin:0 0 .55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:rgba(255,255,255,.65);
 }
 .acct-badge{
@@ -148,16 +148,16 @@ h1{
 }
 .accounting-band h2{
   display:block;text-transform:none;letter-spacing:-.02em;color:#fff;
-  font-size:clamp(1.6rem,1.2rem + 1.8vw,2.4rem);font-weight:650;
-  margin:0 0 .9rem;text-wrap:balance;
+  font-size:clamp(1.5rem,1.15rem + 1.6vw,2.2rem);font-weight:650;
+  margin:0 0 .6rem;text-wrap:balance;
 }
 .accounting-band h2::after{display:none}
 .acct-text{
-  max-width:54ch;margin:0 auto 1.2rem;color:rgba(255,255,255,.75);
+  max-width:54ch;margin:0 auto .9rem;color:rgba(255,255,255,.75);
   font-size:clamp(1rem,.98rem + .25vw,1.12rem);text-wrap:pretty;
 }
 .acct-offer{
-  display:inline-block;margin:0 0 1.8rem;padding:.75rem 1.25rem;
+  display:inline-block;margin:0 0 1.2rem;padding:.75rem 1.25rem;
   border:1px solid rgba(255,255,255,.22);border-radius:.75rem;color:#fff;
   font-size:clamp(1rem,.98rem + .25vw,1.1rem);
 }
@@ -167,7 +167,7 @@ h1{
   letter-spacing:.12em;text-transform:uppercase;
 }
 .acct-offer strong{font-weight:700}
-.acct-offers{display:grid;gap:.7rem;justify-items:center;margin:0 0 1.8rem}
+.acct-offers{display:grid;gap:.55rem;justify-items:center;margin:0 0 1.2rem}
 .acct-offers .acct-offer{margin:0}
 .acct-offer-label.ghost{background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff}
 .accounting-band .cta{margin:0}
