@@ -342,24 +342,25 @@ body.tilitoimisto footer.site a:hover{color:#fff;text-decoration-color:var(--blu
   .t-split{grid-template-columns:1fr}
 }
 
-/* ── Syntropia Flow: koko sivun viileä tumma ilme ───────────── */
+/* ── Syntropia Flow: viileä, luottamusta herättävä ilme ─────── */
 body.flow{
-  --t-ink:#eef2f8;
-  --t-paper:#141b25;
-  --t-line:#27313e;
-  --t-muted:#a3aeba;
+  --t-ink:#16233a;
+  --t-paper:#f6f8fb;
+  --t-line:#dfe5ee;
+  --t-muted:#5b6b82;
   background:
-    radial-gradient(120% 55% at 50% 0%, rgba(30,58,95,.4), transparent 58%),
-    #0e131a;
+    radial-gradient(120% 55% at 50% 0%, rgba(30,58,95,.08), transparent 60%),
+    #fbfcfe;
   color:var(--t-ink);
 }
 body.flow header.site{border-bottom-color:var(--t-line)}
-body.flow .offer{background:transparent;border-bottom:1px solid var(--t-line)}
-body.flow .price-example{background:#0b1017;border:1px solid var(--t-line)}
-body.flow .price-card{background:var(--t-paper)}
-body.flow .addon{background:var(--t-paper)}
-body.flow .t-contact{background:#0b1017}
-body.flow footer.site{background:#0b1017;border-top-color:rgba(255,255,255,.12)}
+body.flow .offer{background:#ffffff;border-bottom:1px solid var(--t-line)}
+body.flow .pricing{background:#f2f6fb;border-block-color:var(--t-line)}
+body.flow .price-example{background:#12203a;border:1px solid #1e3a5f}
+body.flow .price-card{background:#ffffff;box-shadow:0 1.2rem 2.6rem rgba(22,35,58,.07)}
+body.flow .addon{background:#ffffff}
+body.flow .t-contact{background:#12203a}
+body.flow footer.site{background:#12203a;border-top-color:rgba(255,255,255,.12)}
 @media (max-width:44rem){
   .t-footer{flex-wrap:wrap;gap:.4rem}
 }
