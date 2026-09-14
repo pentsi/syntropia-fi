@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="100%"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 250" width="100%"
      preserveAspectRatio="xMidYMid meet" role="img"
      aria-labelledby="hqm-title hqm-desc">
-  <title id="hqm-title">Tiimit jakavat kollektiivisen muistin</title>
-  <desc id="hqm-desc">Kaikki tiimit lukevat ja kirjoittavat samaan jaettuun muistiin, joten sovitut asiat ja tehty työ säilyvät tiimien yli.</desc>
+  <title id="hqm-title">Tiimikohtainen jaettu muisti</title>
+  <desc id="hqm-desc">Jokaisella tiimillä on oma jaettu muisti, jonka tiimin jäsenet jakavat. Tiimit vaihtavat sovitut asiat keskenään.</desc>
 
   <defs>
     <style>
@@ -10,7 +10,7 @@
       .hqg-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:14px;font-weight:600}
       .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
       .hqg-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
-      .hqg-hub{fill:#e8edf4;stroke:#1e3a5f;stroke-width:1.5}
+      .hqg-mem{fill:#e8edf4;stroke:#1e3a5f;stroke-width:1.5}
       .hqg-dbl{stroke:#2f5d57;stroke-width:2;fill:none;stroke-dasharray:5 5}
     </style>
     <marker id="hqmDbl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -18,27 +18,28 @@
     </marker>
   </defs>
 
-  <text class="hqg-h" x="420" y="34" text-anchor="middle">Tiimit jakavat kollektiivisen muistin</text>
-  <text class="hqg-s" x="420" y="56" text-anchor="middle">Sovitut asiat ja tehty työ säilyvät tiimien yli.</text>
+  <text class="hqg-h" x="420" y="36" text-anchor="middle">Tiimikohtainen jaettu muisti</text>
+  <text class="hqg-s" x="420" y="58" text-anchor="middle">Jokaisella tiimillä on oma muisti, ja tiimit jakavat sovitut asiat keskenään.</text>
 
-  <rect class="hqg-box" x="60" y="154" width="170" height="52" rx="14"></rect>
-  <text class="hqg-t" x="145" y="186" text-anchor="middle">Tiimi 1</text>
+  <rect class="hqg-box" x="70" y="80" width="150" height="54" rx="14"></rect>
+  <text class="hqg-t" x="145" y="114" text-anchor="middle">Tiimi 1</text>
+  <rect class="hqg-mem" x="70" y="170" width="150" height="54" rx="14"></rect>
+  <text class="hqg-t" x="145" y="204" text-anchor="middle">muisti</text>
 
-  <rect class="hqg-box" x="610" y="154" width="170" height="52" rx="14"></rect>
-  <text class="hqg-t" x="695" y="186" text-anchor="middle">Tiimi 2</text>
+  <rect class="hqg-box" x="345" y="80" width="150" height="54" rx="14"></rect>
+  <text class="hqg-t" x="420" y="114" text-anchor="middle">Tiimi 2</text>
+  <rect class="hqg-mem" x="345" y="170" width="150" height="54" rx="14"></rect>
+  <text class="hqg-t" x="420" y="204" text-anchor="middle">muisti</text>
 
-  <rect class="hqg-box" x="335" y="80" width="170" height="52" rx="14"></rect>
-  <text class="hqg-t" x="420" y="112" text-anchor="middle">Tiimi 3</text>
+  <rect class="hqg-box" x="620" y="80" width="150" height="54" rx="14"></rect>
+  <text class="hqg-t" x="695" y="114" text-anchor="middle">Tiimi 3</text>
+  <rect class="hqg-mem" x="620" y="170" width="150" height="54" rx="14"></rect>
+  <text class="hqg-t" x="695" y="204" text-anchor="middle">muisti</text>
 
-  <rect class="hqg-box" x="335" y="250" width="170" height="52" rx="14"></rect>
-  <text class="hqg-t" x="420" y="282" text-anchor="middle">Tiimi 4</text>
+  <path class="hqg-dbl" d="M145 134 V170" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
+  <path class="hqg-dbl" d="M420 134 V170" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
+  <path class="hqg-dbl" d="M695 134 V170" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
 
-  <rect class="hqg-hub" x="330" y="150" width="180" height="64" rx="16"></rect>
-  <text class="hqg-t" x="420" y="178" text-anchor="middle">Jaettu muisti</text>
-  <text class="hqg-s" x="420" y="198" text-anchor="middle">kaikille yhteinen</text>
-
-  <path class="hqg-dbl" d="M230 180 H330" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
-  <path class="hqg-dbl" d="M610 180 H510" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
-  <path class="hqg-dbl" d="M420 132 V150" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
-  <path class="hqg-dbl" d="M420 214 V250" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
+  <path class="hqg-dbl" d="M220 197 H345" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
+  <path class="hqg-dbl" d="M495 197 H620" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
 </svg>
