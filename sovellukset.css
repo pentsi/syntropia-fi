@@ -12,3 +12,16 @@ body.sovellukset .btn.ghost{background:transparent;color:#fff;border-color:rgba(
 body.sovellukset .btn.ghost:hover{background:rgba(255,255,255,.08);color:#fff;border-color:#fff}
 body.sovellukset .t-contact .mail a{background-image:linear-gradient(var(--amber),var(--amber))}
 body.sovellukset .t-contact .mail a:hover{color:var(--amber-soft)}
+
+/* lippulaivatuote (Syntropia Accounting): korostettu kortti */
+.card-featured{
+  position:relative;padding:clamp(1.35rem,3.5vw,2rem);
+  border:1px solid var(--line);border-radius:1rem;
+  background:linear-gradient(180deg,#fff 45%,var(--amber-soft));
+  box-shadow:0 12px 34px -20px rgba(224,40,56,.45);
+}
+.app-badge{
+  display:inline-block;margin:0 0 .8rem;padding:.26rem .68rem;border-radius:999px;
+  background:var(--amber);color:var(--ink);font-size:.72rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+}
