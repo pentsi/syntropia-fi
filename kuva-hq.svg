@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 240" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="hq-title hq-desc">
+  <title id="hq-title">Headquarters: 24 tunnin työputki</title>
+  <desc id="hq-desc">Aikajana, jolla Headquarters herättää agentin heti kun työtä on. Agentti työskentelee, ja kun työ on valmis, Headquarters herättää seuraavan. Työketju jatkuu läpi vuorokauden, eikä kukaan jää odottamaan.</desc>
+
+  <defs>
+    <style>
+      .hqt-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
+      .hqt-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:13px}
+      .hqt-work{fill:#e8edf4;stroke:#1e3a5f;stroke-width:1.5}
+      .hqt-label{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#1e3a5f;font-size:12.5px}
+      .hqt-wake{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#8f6608;font-size:12px;font-weight:600}
+      .hqt-time{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12px}
+      .hqt-line{stroke:#e6e4e2;stroke-width:3;fill:none}
+      .hqt-bolt{fill:#f5c33b;stroke:#8f6608;stroke-width:1}
+    </style>
+    <marker id="hqtArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
+    </marker>
+  </defs>
+
+  <text class="hqt-h" x="420" y="48" text-anchor="middle">HQ herättää agentin heti, kun työtä on</text>
+  <text class="hqt-s" x="420" y="72" text-anchor="middle">Työketju jatkuu läpi vuorokauden. Kukaan ei jää odottamaan.</text>
+
+  <!-- Vuorokauden jana -->
+  <path class="hqt-line" d="M70 150 H770" marker-end="url(#hqtArrow)"></path>
+
+  <!-- Agentin työputket -->
+  <rect class="hqt-work" x="110" y="130" width="150" height="40" rx="20"></rect>
+  <text class="hqt-label" x="185" y="155" text-anchor="middle">agentti työskentelee</text>
+
+  <rect class="hqt-work" x="350" y="130" width="150" height="40" rx="20"></rect>
+  <text class="hqt-label" x="425" y="155" text-anchor="middle">agentti työskentelee</text>
+
+  <rect class="hqt-work" x="590" y="130" width="150" height="40" rx="20"></rect>
+  <text class="hqt-label" x="665" y="155" text-anchor="middle">agentti työskentelee</text>
+
+  <!-- Herätykset työn välissä -->
+  <path class="hqt-bolt" d="M307 138 L297 152 L304 152 L301 162 L313 146 L306 146 Z"></path>
+  <text class="hqt-wake" x="305" y="196" text-anchor="middle">herätys</text>
+
+  <path class="hqt-bolt" d="M547 138 L537 152 L544 152 L541 162 L553 146 L546 146 Z"></path>
+  <text class="hqt-wake" x="545" y="196" text-anchor="middle">herätys</text>
+
+  <!-- Kellonajat -->
+  <text class="hqt-time" x="70" y="182" text-anchor="middle">0 h</text>
+  <text class="hqt-time" x="770" y="182" text-anchor="middle">24 h</text>
+</svg>
