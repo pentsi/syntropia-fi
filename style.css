@@ -436,13 +436,6 @@ h3{margin:0 0 .5rem;font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
 }
 .product-note{margin:1.5rem 0 0;color:var(--muted);font-size:.92rem;font-weight:550}
 
-/* etusivun sovellusnostot */
-.app-teasers{display:grid;gap:clamp(1.25rem,3vw,2rem);grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
-.app-teaser{display:flex;flex-direction:column;min-height:100%;padding:clamp(1.35rem,3vw,1.9rem);border:1px solid var(--line);border-radius:.9rem;background:#fff}
-.app-teaser img{display:block;width:100%;height:auto;margin:0 0 1.2rem}
-.app-teaser h3{font-size:clamp(1.2rem,1.08rem + .5vw,1.5rem)}
-.app-teaser .app-cta{margin:auto 0 0;padding-top:.4rem}
-
 /* ── tietosuojaseloste ───────────────────────────────────────── */
 .legal{max-width:48rem}
 .legal h1{margin:0 0 .35rem;font-size:clamp(1.7rem,1.4rem + 1.3vw,2.4rem)}
