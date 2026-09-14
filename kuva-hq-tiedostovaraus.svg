@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 210" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="hqf-title hqf-desc">
+  <title id="hqf-title">Tiedostovaraus estää päällekkäisyydet</title>
+  <desc id="hqf-desc">Agentti varaa tiedoston ennen kuin muokkaa sitä. Toinen agentti odottaa vuoroaan, joten kaksi ei kirjoita samaan tiedostoon yhtä aikaa.</desc>
+
+  <defs>
+    <style>
+      .hqg-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
+      .hqg-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:15px;font-weight:600}
+      .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
+      .hqg-lb{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;font-size:12px;font-weight:600}
+      .hqg-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .hqg-file{fill:#fdf3d5;stroke:#f5c33b;stroke-width:1.5}
+      .hqg-blue{stroke:#1e3a5f;stroke-width:2.5;fill:none}
+      .hqg-chk{stroke:#5f6065;stroke-width:1.5;stroke-dasharray:5 5;fill:none}
+    </style>
+    <marker id="hqfBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1e3a5f"></path>
+    </marker>
+    <marker id="hqfChk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5f6065"></path>
+    </marker>
+  </defs>
+
+  <text class="hqg-h" x="420" y="42" text-anchor="middle">Tiedostovaraus estää päällekkäisyydet</text>
+  <text class="hqg-s" x="420" y="66" text-anchor="middle">Kaksi agenttia ei kirjoita samaan tiedostoon yhtä aikaa.</text>
+
+  <rect class="hqg-box" x="60" y="100" width="210" height="80" rx="14"></rect>
+  <text class="hqg-t" x="165" y="140" text-anchor="middle">Agentti A</text>
+  <text class="hqg-s" x="165" y="162" text-anchor="middle">varaa tiedoston</text>
+
+  <rect class="hqg-file" x="345" y="100" width="150" height="80" rx="14"></rect>
+  <rect class="hqg-box" x="409" y="112" width="22" height="16" rx="3" fill="none" stroke="#8f6608" stroke-width="1.6"></rect>
+  <path d="M413 112 v-4 a7 7 0 0 1 14 0 v4" fill="none" stroke="#8f6608" stroke-width="1.6"></path>
+  <text class="hqg-t" x="420" y="152" text-anchor="middle">tiedosto</text>
+  <text class="hqg-s" x="420" y="172" text-anchor="middle" fill="#8f6608">varattu</text>
+
+  <rect class="hqg-box" x="570" y="100" width="210" height="80" rx="14"></rect>
+  <text class="hqg-t" x="675" y="140" text-anchor="middle">Agentti B</text>
+  <text class="hqg-s" x="675" y="162" text-anchor="middle">odottaa vuoroaan</text>
+
+  <path class="hqg-blue" d="M270 135 H345" marker-end="url(#hqfBlue)"></path>
+  <text class="hqg-lb" x="307" y="124" text-anchor="middle" fill="#1e3a5f">varaa</text>
+
+  <path class="hqg-chk" d="M495 135 H570" marker-end="url(#hqfChk)"></path>
+  <text class="hqg-lb" x="532" y="124" text-anchor="middle" fill="#5f6065">odottaa</text>
+</svg>

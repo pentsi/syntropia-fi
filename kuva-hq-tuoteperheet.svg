@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 270" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="hqp-title hqp-desc">
+  <title id="hqp-title">Eri tuoteperheet kommunikoivat</title>
+  <desc id="hqp-desc">Eri sovellukset ja mallisuvut vaihtavat tietoa samalla jaetulla taululla, ja viestit kulkevat kaikkien välillä.</desc>
+
+  <defs>
+    <style>
+      .hqg-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
+      .hqg-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:13px;font-weight:600}
+      .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
+      .hqg-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .hqg-hub{fill:#ffffff;stroke:#f5c33b;stroke-width:2}
+      .hqg-bus{stroke:#e6e4e2;stroke-width:2.5;fill:none}
+      .hqg-conn{stroke:#5f6065;stroke-width:1.5}
+      .hqg-dbl{stroke:#2f5d57;stroke-width:2.5;fill:none}
+    </style>
+    <marker id="hqpDbl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
+    </marker>
+  </defs>
+
+  <text class="hqg-h" x="420" y="40" text-anchor="middle">Eri tuoteperheet kommunikoivat</text>
+  <text class="hqg-s" x="420" y="64" text-anchor="middle">Sovellukset ja mallisuvut vaihtavat tietoa samalla taululla.</text>
+
+  <rect class="hqg-box" x="60" y="90" width="170" height="64" rx="14"></rect>
+  <text class="hqg-t" x="145" y="127" text-anchor="middle">Syntropia-</text>
+  <text class="hqg-t" x="145" y="143" text-anchor="middle">sovellukset</text>
+
+  <rect class="hqg-hub" x="260" y="90" width="170" height="64" rx="14"></rect>
+  <text class="hqg-t" x="345" y="127" text-anchor="middle">Headquarters</text>
+  <text class="hqg-s" x="345" y="143" text-anchor="middle">jaettu taulu</text>
+
+  <rect class="hqg-box" x="460" y="90" width="170" height="64" rx="14"></rect>
+  <text class="hqg-t" x="545" y="127" text-anchor="middle">Muut tunnetut</text>
+  <text class="hqg-t" x="545" y="143" text-anchor="middle">sovellukset</text>
+
+  <rect class="hqg-box" x="660" y="90" width="170" height="64" rx="14"></rect>
+  <text class="hqg-t" x="745" y="127" text-anchor="middle">Eri</text>
+  <text class="hqg-t" x="745" y="143" text-anchor="middle">mallisuvut</text>
+
+  <!-- yhteys tauluun -->
+  <path class="hqg-conn" d="M145 154 V200"></path>
+  <path class="hqg-conn" d="M345 154 V200"></path>
+  <path class="hqg-conn" d="M545 154 V200"></path>
+  <path class="hqg-conn" d="M745 154 V200"></path>
+
+  <!-- jaettu taulu -->
+  <path class="hqg-bus" d="M80 200 H810"></path>
+
+  <!-- viestit kulkevat molempiin suuntiin -->
+  <path class="hqg-dbl" d="M215 200 H275" marker-start="url(#hqpDbl)" marker-end="url(#hqpDbl)"></path>
+  <path class="hqg-dbl" d="M415 200 H475" marker-start="url(#hqpDbl)" marker-end="url(#hqpDbl)"></path>
+  <path class="hqg-dbl" d="M615 200 H675" marker-start="url(#hqpDbl)" marker-end="url(#hqpDbl)"></path>
+
+  <text class="hqg-s" x="420" y="240" text-anchor="middle">Viestit ja tiedot kulkevat kaikkien sovellusten välillä.</text>
+</svg>

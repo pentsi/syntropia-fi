@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 210" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="hqa-title hqa-desc">
+  <title id="hqa-title">Agentti promppaa agenttia</title>
+  <desc id="hqa-desc">Ylätason agentti antaa tehtävän ja herättää alatason agentin, joka tekee työn ja raportoi tuloksen takaisin. Työ etenee hierarkiassa ilman ihmisen välikättä.</desc>
+
+  <defs>
+    <style>
+      .hqg-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
+      .hqg-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:15px;font-weight:600}
+      .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
+      .hqg-lb{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;font-size:12px;font-weight:600}
+      .hqg-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .hqg-blue{stroke:#1e3a5f;stroke-width:2.5;fill:none}
+      .hqg-petrol{stroke:#2f5d57;stroke-width:2.5;fill:none}
+    </style>
+    <marker id="hqaBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1e3a5f"></path>
+    </marker>
+    <marker id="hqaPetrol" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
+    </marker>
+  </defs>
+
+  <text class="hqg-h" x="420" y="42" text-anchor="middle">Agentti promppaa agenttia</text>
+  <text class="hqg-s" x="420" y="66" text-anchor="middle">Tehtävä etenee hierarkiassa ilman ihmisen välikättä.</text>
+
+  <rect class="hqg-box" x="70" y="100" width="250" height="80" rx="14"></rect>
+  <text class="hqg-t" x="195" y="140" text-anchor="middle">Agentti · ylätaso</text>
+  <text class="hqg-s" x="195" y="162" text-anchor="middle">delegoi ja herättää</text>
+
+  <rect class="hqg-box" x="520" y="100" width="250" height="80" rx="14"></rect>
+  <text class="hqg-t" x="645" y="140" text-anchor="middle">Agentti · alataso</text>
+  <text class="hqg-s" x="645" y="162" text-anchor="middle">tekee työn</text>
+
+  <path class="hqg-blue" d="M320 122 H520" marker-end="url(#hqaBlue)"></path>
+  <text class="hqg-lb" x="420" y="112" text-anchor="middle" fill="#1e3a5f">prompti</text>
+
+  <path class="hqg-petrol" d="M520 158 H320" marker-end="url(#hqaPetrol)"></path>
+  <text class="hqg-lb" x="420" y="178" text-anchor="middle" fill="#2f5d57">tulos</text>
+</svg>
