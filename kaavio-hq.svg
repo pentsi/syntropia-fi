@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 660" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="hq-title hq-desc">
+  <title id="hq-title">Headquarters: miten työ kulkee</title>
+  <desc id="hq-desc">Kaavio, jossa työ delegoidaan alaspäin ihmiseltä Chief of Staffille, operatiivisille johtajille ja tekijöille, ja tulos raportoidaan ylöspäin samalle taululle. Sivussa toimivat erilliset, riippumattomat koodintarkastajat.</desc>
+
+  <defs>
+    <style>
+      .hq-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16px;font-weight:600}
+      .hq-t2{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:13.5px;font-weight:600}
+      .hq-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:13px}
+      .hq-xs{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:11.5px}
+      .hq-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .hq-tick{stroke:#e6e4e2;stroke-width:1.5}
+      .hq-down{stroke:#1e3a5f;stroke-width:2.5;fill:none}
+      .hq-up{stroke:#2f5d57;stroke-width:2.5;fill:none}
+      .hq-chk{stroke:#5f6065;stroke-width:1.5;stroke-dasharray:5 5;fill:none}
+      .hq-chkbox{fill:#ffffff;stroke:#5f6065;stroke-width:1.5;stroke-dasharray:5 5}
+    </style>
+    <marker id="hqDown" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1e3a5f"></path>
+    </marker>
+    <marker id="hqUp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
+    </marker>
+    <marker id="hqChk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5f6065"></path>
+    </marker>
+  </defs>
+
+  <!-- Ylös kulkeva tulos-väylä (taustalla) -->
+  <path class="hq-tick" d="M520 77 H545"></path>
+  <path class="hq-tick" d="M520 207 H545"></path>
+  <path class="hq-tick" d="M520 337 H545"></path>
+  <path class="hq-tick" d="M520 467 H545"></path>
+  <path class="hq-up" d="M545 467 V77" marker-end="url(#hqUp)"></path>
+
+  <!-- Tasot -->
+  <rect class="hq-box" x="100" y="40" width="420" height="74" rx="14"></rect>
+  <text class="hq-t" x="310" y="78" text-anchor="middle">Ihminen (perustaja)</text>
+  <text class="hq-s" x="310" y="100" text-anchor="middle">päättää suunnan ja hyväksyy peruuttamattomat toimet</text>
+
+  <rect class="hq-box" x="100" y="170" width="420" height="74" rx="14"></rect>
+  <text class="hq-t" x="310" y="208" text-anchor="middle">Chief of Staff</text>
+  <text class="hq-s" x="310" y="230" text-anchor="middle">pitää yllä tilannekuvaa ja jakaa työn</text>
+
+  <rect class="hq-box" x="100" y="300" width="420" height="74" rx="14"></rect>
+  <text class="hq-t" x="310" y="338" text-anchor="middle">Operatiiviset johtajat</text>
+  <text class="hq-s" x="310" y="360" text-anchor="middle">yksi kutakin sovellusta kohden</text>
+
+  <rect class="hq-box" x="100" y="430" width="420" height="74" rx="14"></rect>
+  <text class="hq-t" x="310" y="468" text-anchor="middle">Lead- ja senior-kehittäjät sekä toteuttajat</text>
+  <text class="hq-s" x="310" y="490" text-anchor="middle">tekevät työn</text>
+
+  <!-- Työ alas -->
+  <path class="hq-down" d="M310 122 V162" marker-end="url(#hqDown)"></path>
+  <path class="hq-down" d="M310 252 V292" marker-end="url(#hqDown)"></path>
+  <path class="hq-down" d="M310 382 V422" marker-end="url(#hqDown)"></path>
+
+  <!-- Sivussa: riippumattomat koodintarkastajat -->
+  <rect class="hq-chkbox" x="585" y="410" width="170" height="130" rx="14"></rect>
+  <text class="hq-t2" x="670" y="448" text-anchor="middle">Riippumattomat</text>
+  <text class="hq-t2" x="670" y="466" text-anchor="middle">koodintarkastajat</text>
+  <text class="hq-xs" x="670" y="492" text-anchor="middle">sivussa, ei minkään</text>
+  <text class="hq-xs" x="670" y="508" text-anchor="middle">tiimin alla</text>
+  <text class="hq-xs" x="670" y="530" text-anchor="middle">eri mallisuku kuin tekijä</text>
+
+  <path class="hq-chk" d="M520 490 H585" marker-start="url(#hqChk)" marker-end="url(#hqChk)"></path>
+  <text class="hq-xs" x="552" y="482" text-anchor="middle">tarkastus</text>
+
+  <!-- Selitteet -->
+  <text class="hq-s" x="40" y="600">↓  Työ delegoidaan alas nimetylle omistajalle</text>
+  <text class="hq-s" x="40" y="624">↑  Tulos raportoidaan ylös samalle taululle</text>
+</svg>
