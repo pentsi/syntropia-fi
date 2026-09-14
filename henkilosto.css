@@ -42,6 +42,10 @@ body.henkilosto .hero{
 }
 .person-photo:not(:has(img)){border-style:dashed}
 
+/* agentti-ikoni kuvapaikan sijaan (esim. devaajatiimi) */
+.person-photo.person-photo-icon{border-style:solid;color:var(--petrol)}
+.person-photo.person-photo-icon svg{width:2.4rem;height:2.4rem;display:block}
+
 .person-tag{
   display:inline-block;margin:0 0 .6rem;padding:.2rem .55rem;border-radius:999px;
   background:var(--amber-soft);border:1px solid rgba(245,195,59,.5);color:var(--amber-deep);
