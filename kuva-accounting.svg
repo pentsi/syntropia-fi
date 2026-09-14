@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 340" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="ac-title ac-desc">
+  <title id="ac-title">Syntropia Accounting: tositteet sisään, kirjanpito valmiina</title>
+  <desc id="ac-desc">Tositteet saapuvat sähköpostista, pikaviesteistä ja kuvaamalla. Syntropia Accountingin agentit hoitavat kirjaukset, ja lopputuloksena kirjanpito on ajan tasalla.</desc>
+
+  <defs>
+    <style>
+      .ac-lbl{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:15px}
+      .ac-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:18px;font-weight:600}
+      .ac-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:13px}
+      .ac-chip{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .ac-icon{fill:none;stroke:#1e3a5f;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+      .ac-arrow{stroke-width:2.5;fill:none}
+      .ac-check{fill:none;stroke:#2f5d57;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <marker id="acArrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1e3a5f"></path>
+    </marker>
+    <marker id="acArrowPetrol" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
+    </marker>
+  </defs>
+
+  <!-- Sisään: mistä tositteet tulevat -->
+  <g>
+    <rect class="ac-chip" x="30" y="45" width="190" height="70" rx="12"></rect>
+    <rect class="ac-icon" x="51" y="72" width="24" height="16" rx="3"></rect>
+    <path class="ac-icon" d="M52 75 L63 83 L74 75"></path>
+    <text class="ac-lbl" x="90" y="85">Sähköposti</text>
+
+    <rect class="ac-chip" x="30" y="135" width="190" height="70" rx="12"></rect>
+    <rect class="ac-icon" x="50" y="160" width="26" height="20" rx="6"></rect>
+    <path class="ac-icon" d="M58 180 v6 l7 -6"></path>
+    <text class="ac-lbl" x="90" y="175">Viestit</text>
+
+    <rect class="ac-chip" x="30" y="225" width="190" height="70" rx="12"></rect>
+    <rect class="ac-icon" x="53" y="249" width="20" height="24" rx="3"></rect>
+    <path class="ac-icon" d="M57 255 h12 M57 260 h12 M57 265 h8"></path>
+    <text class="ac-lbl" x="90" y="265">Kuitti kuvattuna</text>
+  </g>
+
+  <!-- Nuoli järjestelmään -->
+  <path class="ac-arrow" d="M226 170 H300" stroke="#1e3a5f" marker-end="url(#acArrowBlue)"></path>
+
+  <!-- Järjestelmä -->
+  <rect class="ac-chip" x="312" y="95" width="250" height="150" rx="16"></rect>
+  <text class="ac-t" x="437" y="158" text-anchor="middle">Syntropia Accounting</text>
+  <text class="ac-s" x="437" y="184" text-anchor="middle">agentit kirjaavat puolestasi</text>
+
+  <!-- Nuoli tulokseen -->
+  <path class="ac-arrow" d="M568 170 H628" stroke="#2f5d57" marker-end="url(#acArrowPetrol)"></path>
+
+  <!-- Ulos: valmis kirjanpito -->
+  <rect class="ac-chip" x="640" y="110" width="180" height="120" rx="16"></rect>
+  <circle class="ac-check" cx="730" cy="145" r="17"></circle>
+  <path class="ac-check" d="M722 145 l6 6 l12 -14"></path>
+  <text class="ac-lbl" x="730" y="190" text-anchor="middle" style="font-weight:600">Valmis kirjaus</text>
+  <text class="ac-s" x="730" y="210" text-anchor="middle">Kirjanpito ajan tasalla</text>
+</svg>
