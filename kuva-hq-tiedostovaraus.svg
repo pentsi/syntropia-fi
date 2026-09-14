@@ -2,7 +2,7 @@
      preserveAspectRatio="xMidYMid meet" role="img"
      aria-labelledby="hqf-title hqf-desc">
   <title id="hqf-title">Tiedostovaraus estää päällekkäisyydet</title>
-  <desc id="hqf-desc">Agentti varaa tiedoston ennen kuin muokkaa sitä. Toinen agentti odottaa vuoroaan, joten kaksi ei kirjoita samaan tiedostoon yhtä aikaa.</desc>
+  <desc id="hqf-desc">Agentti varaa tiedoston ennen kuin muokkaa sitä. Toinen agentti jatkaa sillä välin muuta työtä ja palaa tiedostoon myöhemmin, joten kaksi ei kirjoita samaan tiedostoon yhtä aikaa.</desc>
 
   <defs>
     <style>
@@ -24,25 +24,25 @@
   </defs>
 
   <text class="hqg-h" x="420" y="42" text-anchor="middle">Tiedostovaraus estää päällekkäisyydet</text>
-  <text class="hqg-s" x="420" y="66" text-anchor="middle">Kaksi agenttia ei kirjoita samaan tiedostoon yhtä aikaa.</text>
+  <text class="hqg-s" x="420" y="66" text-anchor="middle">Kaksi ei kirjoita samaan tiedostoon yhtä aikaa. Toinen jatkaa muuta työtä ja palaa myöhemmin.</text>
 
-  <rect class="hqg-box" x="60" y="100" width="210" height="80" rx="14"></rect>
-  <text class="hqg-t" x="165" y="140" text-anchor="middle">Agentti A</text>
-  <text class="hqg-s" x="165" y="162" text-anchor="middle">varaa tiedoston</text>
+  <rect class="hqg-box" x="50" y="100" width="190" height="80" rx="14"></rect>
+  <text class="hqg-t" x="145" y="140" text-anchor="middle">Agentti A</text>
+  <text class="hqg-s" x="145" y="162" text-anchor="middle">varaa tiedoston</text>
 
-  <rect class="hqg-file" x="345" y="100" width="150" height="80" rx="14"></rect>
-  <rect class="hqg-box" x="409" y="112" width="22" height="16" rx="3" fill="none" stroke="#8f6608" stroke-width="1.6"></rect>
-  <path d="M413 112 v-4 a7 7 0 0 1 14 0 v4" fill="none" stroke="#8f6608" stroke-width="1.6"></path>
-  <text class="hqg-t" x="420" y="152" text-anchor="middle">tiedosto</text>
-  <text class="hqg-s" x="420" y="172" text-anchor="middle" fill="#8f6608">varattu</text>
+  <rect class="hqg-file" x="300" y="100" width="150" height="80" rx="14"></rect>
+  <rect x="364" y="112" width="22" height="16" rx="3" fill="none" stroke="#8f6608" stroke-width="1.6"></rect>
+  <path d="M368 112 v-4 a7 7 0 0 1 14 0 v4" fill="none" stroke="#8f6608" stroke-width="1.6"></path>
+  <text class="hqg-t" x="375" y="152" text-anchor="middle">tiedosto</text>
+  <text class="hqg-s" x="375" y="172" text-anchor="middle" fill="#8f6608">varattu</text>
 
-  <rect class="hqg-box" x="570" y="100" width="210" height="80" rx="14"></rect>
-  <text class="hqg-t" x="675" y="140" text-anchor="middle">Agentti B</text>
-  <text class="hqg-s" x="675" y="162" text-anchor="middle">odottaa vuoroaan</text>
+  <rect class="hqg-box" x="580" y="100" width="210" height="80" rx="14"></rect>
+  <text class="hqg-t" x="685" y="140" text-anchor="middle">Agentti B</text>
+  <text class="hqg-s" x="685" y="162" text-anchor="middle">jatkaa muuta työtä</text>
 
-  <path class="hqg-blue" d="M270 135 H345" marker-end="url(#hqfBlue)"></path>
-  <text class="hqg-lb" x="307" y="124" text-anchor="middle" fill="#1e3a5f">varaa</text>
+  <path class="hqg-blue" d="M240 135 H300" marker-end="url(#hqfBlue)"></path>
+  <text class="hqg-lb" x="270" y="124" text-anchor="middle" fill="#1e3a5f">varaa</text>
 
-  <path class="hqg-chk" d="M495 135 H570" marker-end="url(#hqfChk)"></path>
-  <text class="hqg-lb" x="532" y="124" text-anchor="middle" fill="#5f6065">odottaa</text>
+  <path class="hqg-chk" d="M580 135 H450" marker-end="url(#hqfChk)"></path>
+  <text class="hqg-lb" x="515" y="124" text-anchor="middle" fill="#5f6065">palaa myöhemmin</text>
 </svg>

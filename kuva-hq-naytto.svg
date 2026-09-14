@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 240" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="hqn-title hqn-desc">
+  <title id="hqn-title">Yksi näyttö, kaksi katsojaa</title>
+  <desc id="hqn-desc">Sama jaettu taulu on näkyvissä sekä agenteille että ihmiselle. Agentit tekevät työn, ihminen näkee tilanteen ja hyväksyy.</desc>
+
+  <defs>
+    <style>
+      .hqg-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
+      .hqg-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:15px;font-weight:600}
+      .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
+      .hqg-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .hqg-board{fill:#e8edf4;stroke:#1e3a5f;stroke-width:1.5}
+      .hqg-human{fill:#ffffff;stroke:#f5c33b;stroke-width:2}
+      .hqg-dbl{stroke:#2f5d57;stroke-width:2;fill:none;stroke-dasharray:5 5}
+    </style>
+    <marker id="hqnDbl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
+    </marker>
+  </defs>
+
+  <text class="hqg-h" x="420" y="40" text-anchor="middle">Yksi näyttö, kaksi katsojaa</text>
+  <text class="hqg-s" x="420" y="64" text-anchor="middle">Ihminen näkee saman taulun kuin agentit.</text>
+
+  <rect class="hqg-box" x="45" y="115" width="200" height="70" rx="14"></rect>
+  <text class="hqg-t" x="145" y="150" text-anchor="middle">Agentit</text>
+  <text class="hqg-s" x="145" y="172" text-anchor="middle">tekevät työn</text>
+
+  <rect class="hqg-board" x="315" y="95" width="210" height="110" rx="16"></rect>
+  <text class="hqg-t" x="420" y="140" text-anchor="middle">Jaettu taulu</text>
+  <text class="hqg-s" x="420" y="164" text-anchor="middle">tehtävät · viestit</text>
+  <text class="hqg-s" x="420" y="182" text-anchor="middle">hyväksynnät</text>
+
+  <rect class="hqg-human" x="595" y="115" width="200" height="70" rx="14"></rect>
+  <text class="hqg-t" x="695" y="150" text-anchor="middle">Ihminen</text>
+  <text class="hqg-s" x="695" y="172" text-anchor="middle">näkee ja hyväksyy</text>
+
+  <path class="hqg-dbl" d="M245 150 H315" marker-start="url(#hqnDbl)" marker-end="url(#hqnDbl)"></path>
+  <path class="hqg-dbl" d="M595 150 H525" marker-start="url(#hqnDbl)" marker-end="url(#hqnDbl)"></path>
+</svg>

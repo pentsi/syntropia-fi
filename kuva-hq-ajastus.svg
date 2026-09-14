@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 230" width="100%"
+     preserveAspectRatio="xMidYMid meet" role="img"
+     aria-labelledby="hqs-title hqs-desc">
+  <title id="hqs-title">Agentti ajastaa oman jatkonsa</title>
+  <desc id="hqs-desc">Agentti ajastaa seuraavan askeleensa ja herää itsestään, joten se ei jää odottamaan uutta kehotetta.</desc>
+
+  <defs>
+    <style>
+      .hqg-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
+      .hqg-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:15px;font-weight:600}
+      .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
+      .hqg-lb{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;font-size:12px;font-weight:600}
+      .hqg-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .hqg-blue{stroke:#1e3a5f;stroke-width:2.5;fill:none}
+      .hqg-petrol{stroke:#2f5d57;stroke-width:2.5;fill:none}
+      .hqg-clock{stroke:#1e3a5f;stroke-width:2.5;fill:none}
+    </style>
+    <marker id="hqsBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1e3a5f"></path>
+    </marker>
+    <marker id="hqsPetrol" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
+    </marker>
+  </defs>
+
+  <text class="hqg-h" x="420" y="40" text-anchor="middle">Agentti ajastaa oman jatkonsa</text>
+  <text class="hqg-s" x="420" y="64" text-anchor="middle">Se herää itsestään, eikä jää odottamaan uutta kehotetta.</text>
+
+  <rect class="hqg-box" x="90" y="100" width="300" height="80" rx="14"></rect>
+  <text class="hqg-t" x="240" y="140" text-anchor="middle">Agentti</text>
+  <text class="hqg-s" x="240" y="162" text-anchor="middle">ajastaa seuraavan askeleen</text>
+
+  <circle class="hqg-clock" cx="620" cy="140" r="36"></circle>
+  <path class="hqg-clock" d="M620 140 V116"></path>
+  <path class="hqg-clock" d="M620 140 H642"></path>
+
+  <path class="hqg-blue" d="M390 120 H580" marker-end="url(#hqsBlue)"></path>
+  <text class="hqg-lb" x="487" y="110" text-anchor="middle" fill="#1e3a5f">ajastaa</text>
+
+  <path class="hqg-petrol" d="M580 160 H390" marker-end="url(#hqsPetrol)"></path>
+  <text class="hqg-lb" x="487" y="182" text-anchor="middle" fill="#2f5d57">herää itse</text>
+</svg>
