@@ -2,39 +2,47 @@
      preserveAspectRatio="xMidYMid meet" role="img"
      aria-labelledby="hqk-title hqk-desc">
   <title id="hqk-title">Yhteinen keskustelu ja työn loki</title>
-  <desc id="hqk-desc">Yhteisellä keskustelualueella näkee, mitä on tehty ja kuka hoitaa minkäkin asian. Sieltä voi myös ottaa yhteyttä.</desc>
+  <desc id="hqk-desc">Yhteisellä keskustelualueella näkee, mitä on tehty ja kuka hoitaa minkäkin asian, ja sieltä voi ottaa yhteyttä.</desc>
 
   <defs>
     <style>
-      .hqg-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
-      .hqg-t{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:13.5px}
-      .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
-      .hqg-line{stroke:#e6e4e2;stroke-width:2.5}
-      .hqg-pill{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
-      .hqg-conn{stroke:#5f6065;stroke-width:1.5;stroke-dasharray:5 5;fill:none}
+      .hqk-h{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:16.5px;font-weight:600}
+      .hqk-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
+      .hqk-name{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:11px;font-weight:700;letter-spacing:.03em}
+      .hqk-namew{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#bfd6d1;font-size:11px;font-weight:700;letter-spacing:.03em}
+      .hqk-msg{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#0d0d0f;font-size:13px}
+      .hqk-msgw{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#ffffff;font-size:13px}
+      .hqk-card{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
+      .hqk-in{fill:#eef2f7;stroke:#dde4ee;stroke-width:1.5}
+      .hqk-out{fill:#2f5d57}
+      .hqk-btn{fill:#0d0d0f}
+      .hqk-btnt{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#ffffff;font-size:14px;font-weight:600}
     </style>
-    <marker id="hqkChk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M0 0 L10 5 L0 10 z" fill="#5f6065"></path>
-    </marker>
   </defs>
 
-  <text class="hqg-h" x="420" y="36" text-anchor="middle">Yhteinen keskustelu ja työn loki</text>
-  <text class="hqg-s" x="420" y="60" text-anchor="middle">Kaikki näkevät, mitä on tehty, ja voivat ottaa yhteyttä.</text>
+  <text class="hqk-h" x="420" y="36" text-anchor="middle">Yhteinen keskustelu ja työn loki</text>
+  <text class="hqk-s" x="420" y="60" text-anchor="middle">Kaikki näkevät, mitä on tehty, kuka hoitaa, ja mistä ottaa yhteyttä.</text>
 
-  <path class="hqg-line" d="M140 108 V226"></path>
-  <circle cx="140" cy="112" r="9" fill="#1e3a5f"></circle>
-  <text class="hqg-t" x="170" y="117">Tehtävä valmis ja tarkistettu</text>
+  <!-- Keskustelu-/lokikortti -->
+  <rect class="hqk-card" x="56" y="84" width="452" height="196" rx="18"></rect>
 
-  <circle cx="140" cy="167" r="9" fill="#f5c33b"></circle>
-  <text class="hqg-t" x="170" y="172">Kysymys ja vastaus samassa ketjussa</text>
+  <!-- Viesti 1: saapuva -->
+  <rect class="hqk-in" x="76" y="100" width="300" height="52" rx="14"></rect>
+  <text class="hqk-name" x="94" y="122">AINO · MYYNTI</text>
+  <text class="hqk-msg" x="94" y="140">Tehtävä valmis ja tarkistettu</text>
 
-  <circle cx="140" cy="222" r="9" fill="#2f5d57"></circle>
-  <text class="hqg-t" x="170" y="227">Kuka hoitaa tämän</text>
+  <!-- Viesti 2: lähtevä -->
+  <rect class="hqk-out" x="188" y="160" width="300" height="52" rx="14"></rect>
+  <text class="hqk-namew" x="206" y="182">HQ-AGENTTI</text>
+  <text class="hqk-msgw" x="206" y="200">Kysymys: kumpi lasku lähetetään?</text>
 
-  <path class="hqg-conn" d="M470 167 H600" marker-end="url(#hqkChk)"></path>
+  <!-- Viesti 3: saapuva -->
+  <rect class="hqk-in" x="76" y="220" width="300" height="52" rx="14"></rect>
+  <text class="hqk-name" x="94" y="242">SANTERI · JOHTO</text>
+  <text class="hqk-msg" x="94" y="260">Lähetä v2 — kuka hoitaa tämän?</text>
 
-  <rect class="hqg-pill" x="600" y="141" width="200" height="52" rx="26"></rect>
-  <text class="hqg-t" x="700" y="173" text-anchor="middle">Ota yhteyttä</text>
-
-  <text class="hqg-s" x="420" y="276" text-anchor="middle">Sama näkymä kaikille tiimeille.</text>
+  <!-- Yhteydenotto -->
+  <text class="hqk-s" x="672" y="166" text-anchor="middle">Yhteydenotto samasta näkymästä</text>
+  <rect class="hqk-btn" x="576" y="182" width="192" height="48" rx="24"></rect>
+  <text class="hqk-btnt" x="672" y="212" text-anchor="middle">Ota yhteyttä</text>
 </svg>

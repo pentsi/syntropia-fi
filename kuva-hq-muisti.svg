@@ -11,7 +11,9 @@
       .hqg-s{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#5f6065;font-size:12.5px}
       .hqg-box{fill:#ffffff;stroke:#e6e4e2;stroke-width:1.5}
       .hqg-mem{fill:#e8edf4;stroke:#1e3a5f;stroke-width:1.5}
+      .hqg-own{stroke:#cfcdc9;stroke-width:1.5;fill:none}
       .hqg-dbl{stroke:#2f5d57;stroke-width:2;fill:none;stroke-dasharray:5 5}
+      .hqg-lbl{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;fill:#2f5d57;font-size:11.5px;font-weight:600}
     </style>
     <marker id="hqmDbl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#2f5d57"></path>
@@ -24,22 +26,24 @@
   <rect class="hqg-box" x="70" y="80" width="150" height="54" rx="14"></rect>
   <text class="hqg-t" x="145" y="114" text-anchor="middle">Tiimi 1</text>
   <rect class="hqg-mem" x="70" y="170" width="150" height="54" rx="14"></rect>
-  <text class="hqg-t" x="145" y="204" text-anchor="middle">muisti</text>
+  <text class="hqg-t" x="145" y="204" text-anchor="middle">oma muisti</text>
 
   <rect class="hqg-box" x="345" y="80" width="150" height="54" rx="14"></rect>
   <text class="hqg-t" x="420" y="114" text-anchor="middle">Tiimi 2</text>
   <rect class="hqg-mem" x="345" y="170" width="150" height="54" rx="14"></rect>
-  <text class="hqg-t" x="420" y="204" text-anchor="middle">muisti</text>
+  <text class="hqg-t" x="420" y="204" text-anchor="middle">oma muisti</text>
 
   <rect class="hqg-box" x="620" y="80" width="150" height="54" rx="14"></rect>
   <text class="hqg-t" x="695" y="114" text-anchor="middle">Tiimi 3</text>
   <rect class="hqg-mem" x="620" y="170" width="150" height="54" rx="14"></rect>
-  <text class="hqg-t" x="695" y="204" text-anchor="middle">muisti</text>
+  <text class="hqg-t" x="695" y="204" text-anchor="middle">oma muisti</text>
 
-  <path class="hqg-dbl" d="M145 134 V170" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
-  <path class="hqg-dbl" d="M420 134 V170" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
-  <path class="hqg-dbl" d="M695 134 V170" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
+  <path class="hqg-own" d="M145 134 V170"></path>
+  <path class="hqg-own" d="M420 134 V170"></path>
+  <path class="hqg-own" d="M695 134 V170"></path>
 
-  <path class="hqg-dbl" d="M220 197 H345" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
-  <path class="hqg-dbl" d="M495 197 H620" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
+  <text class="hqg-lbl" x="282" y="101" text-anchor="middle">sovitut asiat</text>
+  <text class="hqg-lbl" x="557" y="101" text-anchor="middle">sovitut asiat</text>
+  <path class="hqg-dbl" d="M228 114 H337" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
+  <path class="hqg-dbl" d="M503 114 H612" marker-start="url(#hqmDbl)" marker-end="url(#hqmDbl)"></path>
 </svg>
