@@ -100,30 +100,3 @@ body.henkilosto .hero{
   color:var(--t-muted);font-size:.95rem;max-width:62ch;
 }
 .section-note strong{color:var(--t-ink)}
-
-/* ── työnkulku ─────────────────────────────────────────────── */
-.flow-kicker{
-  margin:clamp(1.1rem,3vw,1.5rem) 0 0;
-  font-weight:650;color:var(--petrol);letter-spacing:-.01em;
-}
-.flow{
-  display:grid;gap:clamp(.9rem,2vw,1.2rem);
-  margin:clamp(1.2rem,3vw,1.6rem) 0 0;padding:0;list-style:none;
-  grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
-}
-.flow li{
-  background:var(--t-paper);border:1px solid var(--t-line);
-  border-radius:1rem;padding:clamp(1.1rem,2.5vw,1.4rem);
-}
-.flow-num{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:1.9rem;height:1.9rem;border-radius:999px;
-  background:var(--amber-soft);border:1px solid rgba(245,195,59,.5);
-  color:var(--amber-deep);font-weight:700;font-size:.85rem;
-  margin:0 0 .7rem;
-}
-.flow li h3{margin:0 0 .45rem;font-size:1.02rem;font-weight:650;letter-spacing:-.01em}
-.flow li p{margin:0 0 .55rem;color:var(--t-ink)}
-.flow li p:last-child{margin-bottom:0}
-.flow li .flow-role{margin-top:.75rem;font-size:.85rem;color:var(--t-muted)}
-.flow li .flow-role strong{color:var(--petrol)}
