@@ -17,8 +17,7 @@ body.henkilosto .hero{
     linear-gradient(180deg,#1a1710 0%,#0b0b0c 100%);
 }
 
-/* ── henkilöstösivun hero-lisäys ───────────────────────────── */
-.hero-note{
+/* ── henkilöstösivun hero-lisäys ───────────────────────────── */.hero-note{
   max-width:54ch;margin:1.1rem auto 0;color:rgba(255,255,255,.6);
   font-size:clamp(.95rem,.93rem + .2vw,1.05rem);
 }
@@ -91,3 +90,40 @@ body.henkilosto .hero{
   font-size:clamp(1rem,.98rem + .25vw,1.12rem);text-wrap:pretty;
 }
 .setup-inner .cta{margin:0;justify-content:center}
+
+/* ── selvennysrivi (ihminen vs. agentti) ────────────────────── */
+.section-note{
+  margin:clamp(1.2rem,3vw,1.6rem) 0 0;
+  padding:clamp(1rem,2.5vw,1.25rem) clamp(1.1rem,3vw,1.5rem);
+  border:1px solid var(--t-line);border-left:3px solid var(--amber);
+  border-radius:.85rem;background:var(--t-paper);
+  color:var(--t-muted);font-size:.95rem;max-width:62ch;
+}
+.section-note strong{color:var(--t-ink)}
+
+/* ── työnkulku ─────────────────────────────────────────────── */
+.flow-kicker{
+  margin:clamp(1.1rem,3vw,1.5rem) 0 0;
+  font-weight:650;color:var(--petrol);letter-spacing:-.01em;
+}
+.flow{
+  display:grid;gap:clamp(.9rem,2vw,1.2rem);
+  margin:clamp(1.2rem,3vw,1.6rem) 0 0;padding:0;list-style:none;
+  grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+}
+.flow li{
+  background:var(--t-paper);border:1px solid var(--t-line);
+  border-radius:1rem;padding:clamp(1.1rem,2.5vw,1.4rem);
+}
+.flow-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:1.9rem;height:1.9rem;border-radius:999px;
+  background:var(--amber-soft);border:1px solid rgba(245,195,59,.5);
+  color:var(--amber-deep);font-weight:700;font-size:.85rem;
+  margin:0 0 .7rem;
+}
+.flow li h3{margin:0 0 .45rem;font-size:1.02rem;font-weight:650;letter-spacing:-.01em}
+.flow li p{margin:0 0 .55rem;color:var(--t-ink)}
+.flow li p:last-child{margin-bottom:0}
+.flow li .flow-role{margin-top:.75rem;font-size:.85rem;color:var(--t-muted)}
+.flow li .flow-role strong{color:var(--petrol)}
